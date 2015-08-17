@@ -16,5 +16,7 @@ $ bower install qiita-coat --save
 @import "qiita-coat/scss/mixins";
 ```
 
-## Docs
-Comming soon.
+## Components
+- markdown
+- syntax-highlight
+- tasklist
