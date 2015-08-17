@@ -8,3 +8,4 @@ Guidelines for SCSS syntax.
 - Use prefix for variable names (e.g. `$color-blue`, `$color-orange`)
 - Prefer full name, not short-cut name
 - Prefer double quoted strings
+- Prefer 4px unit

@@ -6,5 +6,8 @@ html
       | Qiita:Coat
     link[href="/stylesheets/application.css" media="all" rel="stylesheet"]
   body
-    .main
+    main.main
       == yield
+    footer.footer
+      .footer-inner
+        | © #{Time.now.year} Increments Inc.
