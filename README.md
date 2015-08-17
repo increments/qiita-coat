@@ -15,10 +15,3 @@ $ bower install qiita-coat --save
 @import "qiita-coat/scss/variables";
 @import "qiita-coat/scss/mixins";
 ```
-
-## Components
-- avatar
-- button
-- markdown
-- syntax-highlight
-- tasklist
