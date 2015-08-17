@@ -1,2 +1,186 @@
-@mixin markdown-content {
+@import "scss/variables";
+
+@mixin markdown {
+  > *:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  hr {
+    background-color: $color-base-border;
+    border: 0;
+    height: 2px;
+    margin: 1em 0;
+  }
+
+  em {
+    font-family: $font-family-italic;
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: 900;
+  }
+
+  b {
+    font-weight: 900;
+  }
+
+  ins {
+    font-weight: 900;
+  }
+
+  del {
+    text-decoration: line-through;
+  }
+
+  p {
+    margin-bottom: 0;
+    margin-top: 1.6em;
+    font-size: 1em;
+    line-height: 1.875;
+    word-wrap: break-word;
+  }
+
+  img {
+    margin: 0;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  dd {
+    margin-left: 2em;
+  }
+
+  dl {
+    margin: 1em 0;
+  }
+
+  table {
+    display: block;
+    overflow: auto;
+    margin: 1em 0;
+    border-left: solid 1px lighten($color-base-border, 5%);
+  }
+
+  td,
+  th {
+    border-bottom: solid 1px $color-base-border;
+    border-right: solid 1px $color-base-border;
+    padding: 8px 10px;
+    word-wrap: break-word;
+  }
+
+  thead td,
+  th {
+    font-weight: 900;
+    background-color: #fff;
+    border-top: solid 1px lighten($color-base-border, 5%);
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, .03);
+  }
+
+  li p:first-child {
+    margin: 0;
+  }
+
+  ol,
+  ul {
+    line-height: 1.7;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-left: 1.5em;
+  }
+
+  ol > li {
+    list-style-type: decimal;
+  }
+
+  ul > li {
+    list-style-type: disc;
+  }
+
+  li > ol,
+  li > ul {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
+    font-weight: normal;
+    line-height: 1.4;
+    margin: 1.35em 0 .7em;
+
+    + ol,
+    + p,
+    + ul {
+      margin-top: 0;
+    }
+  }
+
+  h1 {
+    $font-size: 24px;
+    border-bottom: solid 3px #eee;
+    font-size: $font-size;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    margin-top: 64px;
+    padding-bottom: 8px;
+
+    .emoji {
+      vertical-align: top;
+    }
+
+    + h2 {
+      margin-top: 24px;
+    }
+  }
+
+  h2 {
+    $font-size: 22px;
+    border-bottom: solid 1px #eee;
+    font-size: $font-size;
+    line-height: 1.225;
+    margin-bottom: 12px;
+    margin-top: 64px;
+    padding-bottom: 8px;
+
+    .emoji {
+      vertical-align: top;
+    }
+
+    + h3 {
+      margin-top: 24px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 1.43;
+    margin-top: 64px;
+  }
+
+  h4 {
+    font-size: 18px;
+    margin-top: 1.3em;
+  }
+
+  h5 {
+    margin-top: 1.5em;
+    font-size: 17px;
+  }
+
+  h6 {
+    margin-top: 1.5em;
+    font-size: 16px;
+    color: #777;
+  }
 }

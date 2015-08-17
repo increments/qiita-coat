@@ -1,3 +1,6 @@
-body {
-  margin: 0 auto;
-}
+@import "bower_components/HTML5-Reset/assets/css/reset";
+@import "scss/all";
+@import "blocks/article";
+@import "blocks/base";
+@import "blocks/main";
+@import "blocks/markdown";

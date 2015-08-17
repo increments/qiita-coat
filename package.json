@@ -1,0 +1,9 @@
+{
+  "name": "qiita-coat",
+  "private": true,
+  "scripts": {
+    "build": "gulp",
+    "sass": "gulp sass",
+    "server": "rackup"
+  }
+}

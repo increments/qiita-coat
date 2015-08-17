@@ -1,0 +1,16 @@
+.article {
+  &-heading {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &-section {
+    margin-top: 60px;
+
+    &-heading {
+      font-size: 24px;
+      font-weight: bold;
+      padding-bottom: 12px;
+    }
+  }
+}
