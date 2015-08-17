@@ -2,10 +2,19 @@
   background-color: #f7f7f7;
 
   &-inner {
+    overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 12px;
     padding-top: 12px;
     width: 860px;
+  }
+
+  &-navigation {
+    float: right;
+
+    &-link {
+      display: inline-block;
+    }
   }
 }
