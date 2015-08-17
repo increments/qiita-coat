@@ -1,0 +1,16 @@
+@mixin tasklist {
+  // Use checkbox instead of disc circle
+  .task-list-item {
+    list-style-type: none;
+  }
+
+  // Move checkbox to the same position with list circle
+  .task-list-item-checkbox {
+    margin: .4em .5em 0 -1.3em;
+  }
+
+  // Silence the default noisy disabled checkbox style
+  .task-list-item-checkbox[disabled] {
+    cursor: default;
+  }
+}

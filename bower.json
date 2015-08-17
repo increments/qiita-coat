@@ -1,6 +1,9 @@
 {
   "name": "qiita-coat",
   "license": "MIT",
+  "main": [
+    "scss/all.scss"
+  ],
   "ignore": [
     "**/.*"
   ]

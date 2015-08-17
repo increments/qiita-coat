@@ -1,5 +1,5 @@
-# Qiita::Coat
-Qiita::Coat is the UI components libraries for the front-end design of Qiita.
+# qiita-coat
+The UI components for Qiita.
 
 ## Install
 ```
@@ -8,7 +8,10 @@ $ bower install qiita-coat --save
 
 ## Usage
 ```scss
-// Import individual files you want use
+// Import all files
+@import "qiita-coat/scss/all";
+
+// Or import individual files
 @import "qiita-coat/scss/variables";
 @import "qiita-coat/scss/mixins";
 ```
