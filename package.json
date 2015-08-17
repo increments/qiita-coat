@@ -4,6 +4,7 @@
   "scripts": {
     "build": "gulp",
     "deploy": "gulp deploy",
+    "rspec": "bundle exec rspec",
     "sass": "gulp sass",
     "server": "rackup"
   },
