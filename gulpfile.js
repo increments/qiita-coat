@@ -1,8 +1,14 @@
+var ghPages = require('gulp-gh-pages');
 var gulp = require('gulp');
 var path = require('path');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var webpack = require('webpack-stream');
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
 
 gulp.task(
   'minify',

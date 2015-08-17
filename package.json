@@ -3,7 +3,11 @@
   "private": true,
   "scripts": {
     "build": "gulp",
+    "deploy": "gulp deploy",
     "sass": "gulp sass",
     "server": "rackup"
+  },
+  "devDependencies": {
+    "gulp-gh-pages": "^0.5.2"
   }
 }

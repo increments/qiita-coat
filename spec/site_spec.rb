@@ -8,6 +8,8 @@ RSpec.describe "Site spec", :sitespec do
 
   %w[
     /
+    /stylesheets/application.css
+    /markdown
   ].each do |path|
     describe "GET #{path}", :sitespec do
       it "returns 200" do
