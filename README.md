@@ -17,6 +17,8 @@ $ bower install qiita-coat --save
 ```
 
 ## Components
+- avatar
+- button
 - markdown
 - syntax-highlight
 - tasklist

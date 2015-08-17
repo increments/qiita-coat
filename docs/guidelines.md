@@ -6,4 +6,5 @@ Guidelines for SCSS syntax.
 - Use alphabetical order for all properties and selectors
 - Use scss-lint
 - Use prefix for variable names (e.g. `$color-blue`, `$color-orange`)
-- Use full name, not short-cut name
+- Prefer full name, not short-cut name
+- Prefer double quoted strings
