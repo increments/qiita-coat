@@ -1,0 +1,7 @@
+{
+  "name": "qiita-coat",
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ]
+}
