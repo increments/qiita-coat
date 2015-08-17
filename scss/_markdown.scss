@@ -183,4 +183,14 @@
     font-size: 16px;
     color: #777;
   }
+
+  pre {
+    background-color: $background-color-code;
+    border: 0;
+    font-family: $font-family-code;
+    line-height: 18px;
+    margin: 0;
+    padding: 8px 15px;
+    white-space: pre-wrap;
+  }
 }

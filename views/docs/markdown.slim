@@ -21,7 +21,60 @@ article.article
         | h6 heading
   .article-section
     .article-section-heading
-        | Paragraph
+        | Paragraphs
     .markdown
       p
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      p
+        | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  .article-section
+    .article-section-heading
+      | Listings
+    .markdown
+      ol
+        li
+          | ordered list item 1
+        li
+          | ordered list item 2
+        li
+          | ordered list item 3
+        li
+          ol
+            li
+              | ordered list item 3-1
+            li
+              | ordered list item 3-2
+            li
+              | ordered list item 3-3
+      ul
+        li
+          | unordered list item 1
+        li
+          | unordered list item 2
+        li
+          | unordered list item 3
+        li
+          ul
+            li
+              | unordered list item 3-1
+            li
+              | unordered list item 3-2
+            li
+              | unordered list item 3-3
+  .article-section
+    .article-section-heading
+      | Tasklist
+    .markdown
+      | Comming soon.
+  .article-section
+    .article-section-heading
+      | Code
+    .markdown
+      pre
+        code
+          |
+            class Foo
+              def bar
+                puts "baz"
+              end
+            end
