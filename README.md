@@ -1,4 +1,4 @@
-# Qiita:Coat
+# qiita-coat
 The UI components for Qiita.
 
 ## Install
