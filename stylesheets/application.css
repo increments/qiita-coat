@@ -2248,8 +2248,11 @@ body {
 .color-bar-color-qiita,
 .color-bar-color-text {
   border-radius: 3px;
-  margin-bottom: 12px;
   padding: 12px; }
+
+.color-bar-background-color-code,
+.color-bar-color-qiita {
+  margin-bottom: 12px; }
 
 .color-bar-background-color-code {
   background-color: #f7f7f7; }
