@@ -1,8 +1,9 @@
 @import "mixins/container";
 
 .footer {
+  @include container;
+
   &-inner {
-    @include container;
     border-top: solid #eee 1px;
     font-size: 13px;
     margin-top: 40px;
