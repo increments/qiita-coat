@@ -1,6 +1,9 @@
+@import "scss/tasklist";
 @import "scss/variables";
 
 @mixin markdown {
+  @include tasklist;
+
   > *:first-child {
     margin-top: 0;
   }
