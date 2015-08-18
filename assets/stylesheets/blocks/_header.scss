@@ -1,8 +1,12 @@
+@import "scss/utilities";
+@import "scss/variables";
+
 .header {
-  background-color: #f7f7f7;
+  background-color: $color-qiita;
 
   &-inner {
-    overflow: hidden;
+    @include clearfix;
+    color: #fff;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 12px;
