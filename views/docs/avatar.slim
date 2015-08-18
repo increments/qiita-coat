@@ -1,0 +1,31 @@
+article.article
+  h1.article-heading
+    | Avatar
+  p
+    | For configurable images such as profile pictures.
+  .article-section
+    .article-section-heading
+      | @mixin avatar
+    .article-example
+      .avatar-examples
+        img.avatar-example[src=url("/images/avatar-example.png") height="128" width="128"]
+      .markdown
+        pre
+          code
+            |
+              .avatar-example {
+                @include avatar;
+              }
+  .article-section
+    .article-section-heading
+      | @mixin avatar-small
+    .article-example
+      .avatar-examples
+        img.avatar-example-small[src=url("/images/avatar-example-small.png") height="36" width="36"]
+      .markdown
+        pre
+          code
+            |
+              .avatar-example-small {
+                @include avatar-small;
+              }

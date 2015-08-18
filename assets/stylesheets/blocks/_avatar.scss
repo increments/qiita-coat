@@ -1,0 +1,16 @@
+@import "scss/avatar";
+
+.avatar {
+  &-example {
+    @include avatar;
+    margin-right: 12px;
+  }
+
+  &-example-small {
+    @include avatar-small;
+  }
+
+  &-examples {
+    margin-bottom: 12px;
+  }
+}

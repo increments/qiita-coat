@@ -11,5 +11,8 @@ main.main
         a.menu-item[class=("menu-item-selected" if params[:document_id] == "colors") href=url("/colors")]
           i.fa.fa-fw.fa-paint-brush>
           | Colors
+        a.menu-item[class=("menu-item-selected" if params[:document_id] == "avatar") href=url("/avatar")]
+          i.fa.fa-fw.fa-smile-o>
+          | Avatar
     .main-main
       == slim :"docs/#{params[:document_id]}"
