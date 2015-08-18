@@ -15,12 +15,10 @@ $ npm install increments/qiita-coat --save
 See files in [/scss](/scss) for more details.
 
 ```scss
-// Import all files
-@import "qiita-coat/scss/all";
-
-// Or import individual files
-@import "qiita-coat/scss/variables";
-@import "qiita-coat/scss/mixins";
+// Import individual files (or import "qiita-coat/scss/all")
+@import "qiita-coat/scss/avatar";
+@import "qiita-coat/scss/grid";
+@import "qiita-coat/scss/markdown";
 ```
 
 ## Development
