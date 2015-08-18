@@ -16,6 +16,8 @@ RSpec.describe "Site spec", :sitespec do
     /fonts/fontawesome-webfont.woff
     /fonts/fontawesome-webfont.woff2
     /fonts/FontAwesome.otf
+    /images/avatar-example.png
+    /images/avatar-example-small.png
     /grid
     /markdown
     /stylesheets/application.css
