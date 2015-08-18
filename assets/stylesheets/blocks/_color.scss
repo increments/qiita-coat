@@ -2,6 +2,7 @@
 
 .color {
   &-bar-background-color-code,
+  &-bar-color-link,
   &-bar-color-qiita,
   &-bar-color-text {
     border-radius: 3px;
@@ -9,12 +10,18 @@
   }
 
   &-bar-background-color-code,
+  &-bar-color-link,
   &-bar-color-qiita {
     margin-bottom: 12px;
   }
 
   &-bar-background-color-code {
     background-color: $background-color-code;
+  }
+
+  &-bar-color-link {
+    background-color: $color-link;
+    color: #fff;
   }
 
   &-bar-color-qiita {
