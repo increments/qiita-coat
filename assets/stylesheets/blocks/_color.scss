@@ -5,8 +5,12 @@
   &-bar-color-qiita,
   &-bar-color-text {
     border-radius: 3px;
-    margin-bottom: 12px;
     padding: 12px;
+  }
+
+  &-bar-background-color-code,
+  &-bar-color-qiita {
+    margin-bottom: 12px;
   }
 
   &-bar-background-color-code {
