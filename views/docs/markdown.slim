@@ -6,86 +6,89 @@ article.article
   .article-section
     .article-section-heading
       | @mixin markdown
-    .markdown
-      p
-        | Include "markdown" mixin into the rendered content wrapper.
-      p
+    .article-example
+      .markdown
         pre
           code
             |
+              // Include "markdown" mixin into the wrapper of rendered content
               .markdown {
                 @include markdown;
               }
   .article-section
     .article-section-heading
       | Headings
-    .markdown
-      h1
-        | h1 heading
-      h2
-        | h2 heading
-      h3
-        | h3 heading
-      h4
-        | h4 heading
-      h5
-        | h5 heading
-      h6
-        | h6 heading
+    .article-example
+      .markdown
+        h1
+          | h1 heading
+        h2
+          | h2 heading
+        h3
+          | h3 heading
+        h4
+          | h4 heading
+        h5
+          | h5 heading
+        h6
+          | h6 heading
   .article-section
     .article-section-heading
         | Paragraphs
-    .markdown
-      p
-        a>[href=""]
-          | Lorem
-        | ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      p
-        | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    .article-example
+      .markdown
+        p
+          a>[href=""]
+            | Lorem
+          | ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        p
+          | Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   .article-section
     .article-section-heading
       | Listings
-    .markdown
-      ol
-        li
-          | ordered list item 1
-        li
-          | ordered list item 2
-        li
-          | ordered list item 3
-        li
-          ol
-            li
-              | ordered list item 3-1
-            li
-              | ordered list item 3-2
-            li
-              | ordered list item 3-3
-      ul
-        li
-          | unordered list item 1
-        li
-          | unordered list item 2
-        li
-          | unordered list item 3
-        li
-          ul
-            li
-              | unordered list item 3-1
-            li
-              | unordered list item 3-2
-            li
-              | unordered list item 3-3
+    .article-example
+      .markdown
+        ol
+          li
+            | ordered list item 1
+          li
+            | ordered list item 2
+          li
+            | ordered list item 3
+          li
+            ol
+              li
+                | ordered list item 3-1
+              li
+                | ordered list item 3-2
+              li
+                | ordered list item 3-3
+        ul
+          li
+            | unordered list item 1
+          li
+            | unordered list item 2
+          li
+            | unordered list item 3
+          li
+            ul
+              li
+                | unordered list item 3-1
+              li
+                | unordered list item 3-2
+              li
+                | unordered list item 3-3
   .article-section
     .article-section-heading
       | Tasklist
-    .markdown
-      | Comming soon.
+    .article-example
+      .markdown
+        | Comming soon.
   .article-section
     .article-section-heading
       | Code
-    .markdown
-      p
+    .article-example
+      .markdown
         pre
           code
             |
