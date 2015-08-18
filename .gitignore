@@ -2,5 +2,6 @@
 /bower_components
 /build
 /node_modules
+/npm-debug.log
 /public/javascripts
 /public/stylesheets
