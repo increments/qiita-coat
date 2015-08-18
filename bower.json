@@ -1,6 +1,9 @@
 {
   "name": "qiita-coat",
+  "version": "0.0.0",
   "license": "MIT",
+  "repository": "increments/qiita-coat",
+  "homepage": "https://github.com/increments/qiita-coat",
   "main": [
     "scss/all.scss"
   ],

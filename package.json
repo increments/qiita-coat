@@ -1,6 +1,9 @@
 {
   "name": "qiita-coat",
-  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "increments/qiita-coat",
+  "homepage": "https://github.com/increments/qiita-coat",
   "scripts": {
     "build": "gulp",
     "build-pages": "bundle exec rspec",

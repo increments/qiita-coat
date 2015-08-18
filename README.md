@@ -2,8 +2,12 @@
 The UI components for Qiita.
 
 ## Install
-```
-$ bower install qiita-coat --save
+```sh
+# As a bower package
+$ bower install increments/qiita-coat --save
+
+# As a npm package
+$ npm install increments/qiita-coat --save
 ```
 
 ## Usage
