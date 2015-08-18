@@ -5,6 +5,19 @@ article.article
     | The markdown components is used for HTML contents rendered from Markdown.
   .article-section
     .article-section-heading
+      | Usage
+    .markdown
+      p
+        | Include "markdown" mixin into the rendered content wrapper.
+      p
+        pre
+          code
+            |
+              .markdown {
+                @include markdown;
+              }
+  .article-section
+    .article-section-heading
       | Headings
     .markdown
       h1

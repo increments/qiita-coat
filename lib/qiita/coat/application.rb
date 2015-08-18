@@ -9,6 +9,14 @@ module Qiita
         register Sinatra::Reloader
       end
 
+      set(
+        :markdown,
+        autolink: true,
+        fenced_code_blocks: true,
+        gh_blockcode: true,
+        tables: true,
+      )
+
       set :root, File.expand_path("../../../..", __FILE__)
 
       get "/" do

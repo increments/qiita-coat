@@ -22,6 +22,10 @@
     margin-left: 2em;
   }
 
+  code {
+    font-family: $font-family-code;
+  }
+
   del {
     text-decoration: line-through;
   }
@@ -161,11 +165,10 @@
     border: 0;
     border-radius: 3px;
     color: $color-gray-dark;
-    font-family: $font-family-code;
     font-size: 13px;
     line-height: 1.5;
     margin: 0;
-    padding: 8px 16px;
+    padding: 12px 16px;
     white-space: pre-wrap;
     word-break: break-all;
     word-wrap: break-word;

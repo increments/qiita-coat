@@ -17,6 +17,8 @@ html
     main.main
       .main-sub
         nav.menu
+          a.menu-item[class=("menu-item-selected" if params[:document_id] == "grid") href=uri("/grid")]
+            | Grid
           a.menu-item[class=("menu-item-selected" if params[:document_id] == "markdown") href=uri("/markdown")]
             | Markdown
       .main-main
