@@ -2244,7 +2244,7 @@ a {
 .footer-inner {
   margin-left: auto;
   margin-right: auto;
-  max-width: 860px;
+  max-width: 920px;
   padding: 20px;
   border-top: solid #eee 1px;
   font-size: 13px;
@@ -2480,7 +2480,7 @@ a {
   .header-inner {
     margin-left: auto;
     margin-right: auto;
-    max-width: 860px;
+    max-width: 920px;
     padding: 20px;
     color: #fff;
     padding-bottom: 12px;
@@ -2522,7 +2522,7 @@ a {
 .main-inner {
   margin-left: auto;
   margin-right: auto;
-  max-width: 860px;
+  max-width: 920px;
   padding: 20px;
   padding-bottom: 40px;
   padding-top: 32px; }
