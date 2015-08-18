@@ -13,7 +13,7 @@ RSpec.describe "Site spec", :sitespec do
   ].each do |path|
     describe "GET #{path}", :sitespec do
       it "returns 200" do
-        expect(get(path).status).to eq 200
+        expect(get(path, nil, "SCRIPT_NAME" => "qiita-coat").status).to eq 200
       end
     end
   end
