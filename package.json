@@ -6,7 +6,8 @@
     "deploy": "gulp deploy",
     "rspec": "bundle exec rspec",
     "sass": "gulp sass",
-    "server": "rackup"
+    "server": "rackup",
+    "setup": "npm install && bundle install"
   },
   "devDependencies": {
     "gulp-gh-pages": "^0.5.2"

@@ -17,10 +17,13 @@ $ bower install qiita-coat --save
 ```
 
 ## Development
-### Set up
+There are some npm tasks for developers.
+
+### npm run setup
+Set up your environment to develop this project.
+
 ```
-$ npm install
-$ bundle install
+$ npm run setup
 ```
 
 ### npm run build
