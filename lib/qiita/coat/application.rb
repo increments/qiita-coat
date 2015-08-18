@@ -10,7 +10,7 @@ module Qiita
       end
 
       helpers do
-        def uri(path, absolute = false, *args)
+        def url(path, absolute = false, *args)
           super(path, absolute, *args)
         end
       end

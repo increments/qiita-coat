@@ -2,9 +2,9 @@ main.main
   .main-inner
     .main-sub
       nav.menu
-        a.menu-item[class=("menu-item-selected" if params[:document_id] == "grid") href=uri("/grid")]
+        a.menu-item[class=("menu-item-selected" if params[:document_id] == "grid") href=url("/grid")]
           | Grid
-        a.menu-item[class=("menu-item-selected" if params[:document_id] == "markdown") href=uri("/markdown")]
+        a.menu-item[class=("menu-item-selected" if params[:document_id] == "markdown") href=url("/markdown")]
           | Markdown
     .main-main
       == slim :"docs/#{params[:document_id]}"
