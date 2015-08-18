@@ -47,6 +47,13 @@ Launch a development server on http://127.0.0.1:9292.
 $ npm run start
 ```
 
+### npm run watch
+Start to watch changes of assets to automatically compile them.
+
+```
+$ npm run watch
+```
+
 ### npm run build-pages
 Build static files into ./build directory.
 

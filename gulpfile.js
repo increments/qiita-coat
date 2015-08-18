@@ -3,6 +3,7 @@ var gulp = require('gulp');
 var path = require('path');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
+var watch = require('gulp-watch');
 var webpack = require('webpack-stream');
 
 gulp.task('deploy', function() {
@@ -37,6 +38,13 @@ gulp.task(
     gulp.src('assets/stylesheets/application.scss')
       .pipe(sass().on('error', sass.logError))
       .pipe(gulp.dest('public/stylesheets'));
+  }
+);
+
+gulp.task(
+  'watch',
+  function () {
+    gulp.watch('assets/**/*', ['sass']);
   }
 );
 

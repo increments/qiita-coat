@@ -10,13 +10,15 @@
     "deploy-pages": "gulp deploy",
     "sass": "gulp sass",
     "setup": "npm install && bundle install && bower install",
-    "start": "bundle exec rackup"
+    "start": "bundle exec rackup",
+    "watch": "gulp watch"
   },
   "devDependencies": {
     "bower": "^1.4.1",
     "gulp": "^3.9.0",
     "gulp-gh-pages": "^0.5.2",
     "gulp-sass": "^2.0.4",
+    "gulp-watch": "^4.3.4",
     "webpack-stream": "^2.1.0"
   }
 }
