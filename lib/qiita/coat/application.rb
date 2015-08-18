@@ -9,6 +9,12 @@ module Qiita
         register Sinatra::Reloader
       end
 
+      helpers do
+        def uri(path, absolute = false, *args)
+          super(path, absolute, *args)
+        end
+      end
+
       set(
         :markdown,
         autolink: true,
