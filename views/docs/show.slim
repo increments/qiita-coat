@@ -8,5 +8,8 @@ main.main
         a.menu-item[class=("menu-item-selected" if params[:document_id] == "markdown") href=url("/markdown")]
           i.fa.fa-fw.fa-file-text-o>
           | Markdown
+        a.menu-item[class=("menu-item-selected" if params[:document_id] == "colors") href=url("/colors")]
+          i.fa.fa-fw.fa-paint-brush>
+          | Colors
     .main-main
       == slim :"docs/#{params[:document_id]}"

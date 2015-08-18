@@ -1,0 +1,25 @@
+@import "scss/variables";
+
+.color {
+  &-bar-background-color-code,
+  &-bar-color-qiita,
+  &-bar-color-text {
+    border-radius: 3px;
+    margin-bottom: 12px;
+    padding: 12px;
+  }
+
+  &-bar-background-color-code {
+    background-color: $background-color-code;
+  }
+
+  &-bar-color-qiita {
+    background-color: $color-qiita;
+    color: #fff;
+  }
+
+  &-bar-color-text {
+    background-color: $color-text;
+    color: #fff;
+  }
+}
