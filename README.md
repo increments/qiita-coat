@@ -37,11 +37,11 @@ Build JavaScripts and Stylesheets.
 $ npm run build
 ```
 
-### npm run server
+### npm run start
 Launch a development server on http://127.0.0.1:9292.
 
 ```
-$ npm run server
+$ npm run start
 ```
 
 ### npm run build-pages
