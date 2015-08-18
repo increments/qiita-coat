@@ -1,0 +1,26 @@
+@import "scss/variables";
+
+.hero {
+  background-color: $color-qiita;
+  color: #fff;
+  padding-bottom: 120px;
+  padding-top: 80px;
+
+  &-button {
+    border: solid 1px #fff;
+    border-radius: 3px;
+    padding: 12px 24px;
+
+    &-container {
+      margin-top: 24px;
+    }
+  }
+
+  &-description {
+    font-size: 24px;
+  }
+
+  &-heading {
+    font-size: 60px;
+  }
+}

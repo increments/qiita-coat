@@ -2,12 +2,14 @@
 @import "scss/utilities";
 
 .main {
-  @include columns;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 40px;
-  padding-top: 32px;
-  width: 860px;
+  &-inner {
+    @include columns;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    padding-top: 32px;
+    width: 860px;
+  }
 
   &-main {
     @include column(3/4);

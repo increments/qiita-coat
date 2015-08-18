@@ -30,7 +30,7 @@ module Qiita
       end
 
       get "/:document_id" do
-        slim :"docs/#{params[:document_id]}"
+        slim :"docs/show"
       end
     end
   end

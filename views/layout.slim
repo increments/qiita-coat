@@ -14,15 +14,7 @@ html
         h1
           a[href=url("/")]
             | Qiita:Coat
-    main.main
-      .main-sub
-        nav.menu
-          a.menu-item[class=("menu-item-selected" if params[:document_id] == "grid") href=uri("/grid")]
-            | Grid
-          a.menu-item[class=("menu-item-selected" if params[:document_id] == "markdown") href=uri("/markdown")]
-            | Markdown
-      .main-main
-        == yield
+    == yield
     footer.footer
       .footer-inner
         p
