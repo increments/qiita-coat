@@ -2242,7 +2242,8 @@ a {
   text-decoration: none; }
 
 body {
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  font-family: "Helvetica Neue", Helvetica, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
 
 .color-bar-background-color-code,
 .color-bar-color-qiita,
