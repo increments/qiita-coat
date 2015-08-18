@@ -11,6 +11,7 @@
     "**/.*"
   ],
   "devDependencies": {
-    "HTML5-Reset": "~2.1.3"
+    "HTML5-Reset": "~2.1.3",
+    "font-awesome": "~4.4.0"
   }
 }
