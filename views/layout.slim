@@ -25,4 +25,9 @@ html
         == yield
     footer.footer
       .footer-inner
-        | © #{Time.now.year} Increments Inc.
+        p
+          | © #{Time.now.year} Increments Inc.
+        p
+          | Maintained by the developers at
+          a<[href="https://github.com/increments"]
+            | Increments.
