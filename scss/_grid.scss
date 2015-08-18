@@ -1,0 +1,11 @@
+@import "scss/utilities";
+
+@mixin column($rate) {
+  box-sizing: border-box;
+  float: left;
+  width: 100% * $rate;
+}
+
+@mixin columns {
+  @include clearfix;
+}
