@@ -227,6 +227,7 @@ a {
   font-size: 13px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
   padding-bottom: 40px;
   padding-top: 40px;
   width: 860px; }
@@ -467,28 +468,46 @@ a {
     .header-navigation-link {
       display: inline-block; }
 
-.main {
+.hero {
+  background-color: #59bb0c;
+  color: #fff;
+  padding-bottom: 120px;
+  padding-top: 80px; }
+  .hero-button {
+    border: solid 1px #fff;
+    border-radius: 3px;
+    padding: 12px 24px; }
+    .hero-button-container {
+      margin-top: 24px; }
+  .hero-description {
+    font-size: 24px; }
+  .hero-heading {
+    font-size: 60px; }
+
+.main-inner {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 40px;
-  padding-top: 20px;
+  padding-top: 32px;
   width: 860px; }
-  .main:before {
+  .main-inner:before {
     content: "";
     display: table; }
-  .main:after {
+  .main-inner:after {
     clear: both;
     content: "";
     display: table; }
-  .main-main {
-    box-sizing: border-box;
-    float: left;
-    width: 75%; }
-  .main-sub {
-    box-sizing: border-box;
-    float: left;
-    width: 25%;
-    padding-right: 24px; }
+
+.main-main {
+  box-sizing: border-box;
+  float: left;
+  width: 75%; }
+
+.main-sub {
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  padding-right: 24px; }
 
 .menu {
   background-color: #fff;
