@@ -44,7 +44,7 @@ gulp.task(
 gulp.task(
   'watch',
   function () {
-    gulp.watch('assets/**/*', ['sass']);
+    gulp.watch('{assets,scss}/**/*', ['sass']);
   }
 );
 

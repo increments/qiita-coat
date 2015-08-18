@@ -29,3 +29,22 @@ article.article
               .avatar-example-small {
                 @include avatar-small;
               }
+  .article-section
+    .article-section-heading
+      | @mixin avatar-parent
+    .article-example
+      .avatar-examples
+        .avatar-example-parent
+          img.avatar-example[src=url("/images/avatar-example.png") height="64" width="64"]
+          img.avatar-example-child[src=url("/images/avatar-example-small.png") height="24" width="24"]
+      .markdown
+        pre
+          code
+            |
+              .avatar-example-child {
+                @include avatar-child;
+              }
+              
+              .avatar-example-parent {
+                @include avatar-parent;
+              }

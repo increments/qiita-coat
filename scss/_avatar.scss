@@ -6,6 +6,21 @@
   vertical-align: middle;
 }
 
+@mixin avatar-child {
+  @include avatar;
+  background-color: #fff;
+  border-radius: 2px;
+  bottom: -9%;
+  box-shadow: -2px -2px 0 rgba(255, 255, 255, 0.8);
+  position: absolute;
+  right: -15%;
+}
+
+@mixin avatar-parent {
+  float: left;
+  position: relative;
+}
+
 @mixin avatar-small {
   @include avatar;
   border-radius: 2px;

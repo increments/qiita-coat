@@ -1,9 +1,17 @@
 @import "scss/avatar";
+@import "scss/utilities";
 
 .avatar {
   &-example {
     @include avatar;
-    margin-right: 12px;
+  }
+
+  &-example-child {
+    @include avatar-child;
+  }
+
+  &-example-parent {
+    @include avatar-parent;
   }
 
   &-example-small {
@@ -11,6 +19,7 @@
   }
 
   &-examples {
+    @include clearfix;
     margin-bottom: 12px;
   }
 }
