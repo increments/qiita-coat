@@ -2237,6 +2237,25 @@ input[type=button] {
     font-weight: bold;
     padding-bottom: 12px; }
 
+.avatar-example {
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 1;
+  overflow: hidden;
+  vertical-align: middle;
+  margin-right: 12px; }
+
+.avatar-example-small {
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 1;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 2px; }
+
+.avatar-examples {
+  margin-bottom: 12px; }
+
 a {
   color: #337ab7;
   text-decoration: none; }
