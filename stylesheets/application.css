@@ -227,14 +227,21 @@ a {
   width: 860px; }
 
 .header {
-  background-color: #f7f7f7; }
+  background-color: #59bb0c; }
   .header-inner {
-    overflow: hidden;
+    color: #fff;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 12px;
     padding-top: 12px;
     width: 860px; }
+    .header-inner:before {
+      content: "";
+      display: table; }
+    .header-inner:after {
+      clear: both;
+      content: "";
+      display: table; }
   .header-navigation {
     float: right; }
     .header-navigation-link {
@@ -246,93 +253,86 @@ a {
   padding-bottom: 40px;
   padding-top: 20px;
   width: 860px; }
+  .main:before {
+    content: "";
+    display: table; }
+  .main:after {
+    clear: both;
+    content: "";
+    display: table; }
+  .main-main {
+    overflow: hidden; }
+  .main-sub {
+    float: left;
+    width: 220px;
+    padding-right: 12px; }
+
+.menu {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  font-size: 13px;
+  list-style: none;
+  margin-bottom: 15px; }
+  .menu-item {
+    border-bottom: 1px solid #eee;
+    display: block;
+    padding: 8px 10px;
+    position: relative;
+    text-shadow: 0 1px 0 #fff; }
+    .menu-item:first-child {
+      border-top: 0;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px; }
+      .menu-item:first-child:before {
+        border-top-left-radius: 2px; }
+    .menu-item:last-child {
+      border-bottom: 0;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px; }
+      .menu-item:last-child:before {
+        border-bottom-left-radius: 2px; }
+    .menu-item:hover {
+      background-color: #f9f9f9;
+      text-decoration: none; }
+    .menu-item-selected {
+      background-color: #fff;
+      color: #222;
+      cursor: default;
+      font-weight: bold; }
+      .menu-item-selected:before {
+        background-color: #d26911;
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 2px; }
 
 .markdown > *:first-child {
   margin-top: 0;
   padding-top: 0; }
 
-.markdown hr {
-  background-color: #ccc;
-  border: 0;
-  height: 2px;
+.markdown a {
+  color: #337ab7; }
+  .markdown a:hover {
+    text-decoration: underline; }
+
+.markdown b {
+  font-weight: 900; }
+
+.markdown dd {
+  margin-left: 2em; }
+
+.markdown del {
+  text-decoration: line-through; }
+
+.markdown dl {
   margin: 1em 0; }
 
 .markdown em {
   font-family: "Helvetica Neue", Helvetica, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, sans-serif;
   font-style: italic; }
-
-.markdown strong {
-  font-weight: 900; }
-
-.markdown b {
-  font-weight: 900; }
-
-.markdown ins {
-  font-weight: 900; }
-
-.markdown del {
-  text-decoration: line-through; }
-
-.markdown p {
-  margin-bottom: 0;
-  margin-top: 1.6em;
-  font-size: 1em;
-  line-height: 1.875;
-  word-wrap: break-word; }
-
-.markdown img {
-  margin: 0;
-  max-width: 100%;
-  vertical-align: middle; }
-
-.markdown dd {
-  margin-left: 2em; }
-
-.markdown dl {
-  margin: 1em 0; }
-
-.markdown table {
-  display: block;
-  overflow: auto;
-  margin: 1em 0;
-  border-left: solid 1px #d9d9d9; }
-
-.markdown td,
-.markdown th {
-  border-bottom: solid 1px #ccc;
-  border-right: solid 1px #ccc;
-  padding: 8px 10px;
-  word-wrap: break-word; }
-
-.markdown thead td,
-.markdown th {
-  font-weight: 900;
-  background-color: #fff;
-  border-top: solid 1px #d9d9d9; }
-
-.markdown tbody tr:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0.03); }
-
-.markdown li p:first-child {
-  margin: 0; }
-
-.markdown ol,
-.markdown ul {
-  line-height: 1.7;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1.5em; }
-
-.markdown ol > li {
-  list-style-type: decimal; }
-
-.markdown ul > li {
-  list-style-type: disc; }
-
-.markdown li > ol,
-.markdown li > ul {
-  margin-bottom: 0;
-  margin-top: 0; }
 
 .markdown h1,
 .markdown h2,
@@ -340,7 +340,7 @@ a {
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  font-family: 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-weight: normal;
   line-height: 1.4;
   margin: 1.35em 0 0.7em; }
@@ -406,11 +406,83 @@ a {
   font-size: 16px;
   color: #777; }
 
+.markdown hr {
+  background-color: #ccc;
+  border: 0;
+  height: 2px;
+  margin: 1em 0; }
+
+.markdown img {
+  margin: 0;
+  max-width: 100%;
+  vertical-align: middle; }
+
+.markdown ins {
+  font-weight: 900; }
+
+.markdown li p:first-child {
+  margin: 0; }
+
+.markdown li > ol,
+.markdown li > ul {
+  margin-bottom: 0;
+  margin-top: 0; }
+
+.markdown ol,
+.markdown ul {
+  line-height: 1.7;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  padding-left: 1.5em; }
+
+.markdown ol > li {
+  list-style-type: decimal; }
+
+.markdown p {
+  font-size: 1em;
+  line-height: 1.875;
+  margin-bottom: 0;
+  margin-top: 1.6em;
+  word-wrap: break-word; }
+
 .markdown pre {
   background-color: #f7f7f7;
   border: 0;
+  border-radius: 3px;
+  color: #333;
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 1.5;
   margin: 0;
   padding: 8px 16px;
-  white-space: pre-wrap; }
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word; }
+
+.markdown strong {
+  font-weight: 900; }
+
+.markdown table {
+  display: block;
+  overflow: auto;
+  margin: 1em 0;
+  border-left: solid 1px #d9d9d9; }
+
+.markdown tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.03); }
+
+.markdown td,
+.markdown th {
+  border-bottom: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  padding: 8px 10px;
+  word-wrap: break-word; }
+
+.markdown thead td,
+.markdown th {
+  font-weight: 900;
+  background-color: #fff;
+  border-top: solid 1px #d9d9d9; }
+
+.markdown ul > li {
+  list-style-type: disc; }
