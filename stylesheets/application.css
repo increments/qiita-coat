@@ -206,6 +206,11 @@ input[type=button] {
   font-size: 24px;
   font-weight: bold; }
 
+.article-example {
+  border: solid 1px #ddd;
+  border-radius: 3px;
+  padding: 16px; }
+
 .article-section {
   margin-top: 60px; }
   .article-section-heading {
@@ -277,8 +282,7 @@ a {
 .grid-example-code {
   margin-top: 12px; }
   .grid-example-code > *:first-child {
-    margin-top: 0;
-    padding-top: 0; }
+    margin-top: 0; }
   .grid-example-code a {
     color: #337ab7; }
     .grid-example-code a:hover {
@@ -514,8 +518,7 @@ a {
         width: 2px; }
 
 .markdown > *:first-child {
-  margin-top: 0;
-  padding-top: 0; }
+  margin-top: 0; }
 
 .markdown a {
   color: #337ab7; }
