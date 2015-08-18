@@ -3,8 +3,10 @@ main.main
     .main-sub
       nav.menu
         a.menu-item[class=("menu-item-selected" if params[:document_id] == "grid") href=url("/grid")]
+          i.fa.fa-fw.fa-th-large>
           | Grid
         a.menu-item[class=("menu-item-selected" if params[:document_id] == "markdown") href=url("/markdown")]
+          i.fa.fa-fw.fa-file-text-o>
           | Markdown
     .main-main
       == slim :"docs/#{params[:document_id]}"
