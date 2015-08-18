@@ -1,17 +1,17 @@
+@import "mixins/container";
 @import "scss/utilities";
 @import "scss/variables";
 
 .header {
   background-color: $color-qiita;
+  width: 100%;
 
   &-inner {
     @include clearfix;
+    @include container;
     color: #fff;
-    margin-left: auto;
-    margin-right: auto;
     padding-bottom: 12px;
     padding-top: 12px;
-    width: 860px;
   }
 
   &-navigation {

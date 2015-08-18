@@ -1,14 +1,13 @@
+@import "mixins/container";
 @import "scss/grid";
 @import "scss/utilities";
 
 .main {
   &-inner {
+    @include container;
     @include columns;
-    margin-left: auto;
-    margin-right: auto;
     padding-bottom: 40px;
     padding-top: 32px;
-    width: 860px;
   }
 
   &-main {
