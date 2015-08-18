@@ -203,7 +203,7 @@ input[type=button] {
   zoom: 1; }
 
 .article-heading {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold; }
 
 .article-example {
@@ -283,16 +283,31 @@ a {
   margin-top: 12px; }
   .grid-example-code > *:first-child {
     margin-top: 0; }
+  .grid-example-code > *:last-child {
+    margin-bottom: 0; }
   .grid-example-code a {
     color: #337ab7; }
     .grid-example-code a:hover {
       text-decoration: underline; }
   .grid-example-code b {
     font-weight: 900; }
+  .grid-example-code blockquote {
+    border-left: solid 4px #ddd;
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 1em;
+    margin-left: .8em;
+    margin-top: 1em;
+    padding: .8em; }
   .grid-example-code dd {
     margin-left: 2em; }
   .grid-example-code code {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+    background-color: #f7f7f7;
+    border-radius: 3px;
+    color: #4a4a4a;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 90%;
+    padding: 2px 4px; }
   .grid-example-code del {
     text-decoration: line-through; }
   .grid-example-code dl {
@@ -520,6 +535,9 @@ a {
 .markdown > *:first-child {
   margin-top: 0; }
 
+.markdown > *:last-child {
+  margin-bottom: 0; }
+
 .markdown a {
   color: #337ab7; }
   .markdown a:hover {
@@ -528,11 +546,25 @@ a {
 .markdown b {
   font-weight: 900; }
 
+.markdown blockquote {
+  border-left: solid 4px #ddd;
+  color: #555;
+  font-size: 1em;
+  margin-bottom: 1em;
+  margin-left: .8em;
+  margin-top: 1em;
+  padding: .8em; }
+
 .markdown dd {
   margin-left: 2em; }
 
 .markdown code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  color: #4a4a4a;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 90%;
+  padding: 2px 4px; }
 
 .markdown del {
   text-decoration: line-through; }
