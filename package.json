@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "build": "gulp",
-    "deploy": "gulp deploy",
-    "rspec": "bundle exec rspec",
+    "build-pages": "bundle exec rspec",
+    "deploy-pages": "gulp deploy",
     "sass": "gulp sass",
     "server": "rackup",
     "setup": "npm install && bundle install"

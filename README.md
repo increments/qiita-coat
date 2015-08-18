@@ -40,16 +40,16 @@ Launch a development server on http://127.0.0.1:9292.
 $ npm run server
 ```
 
-### npm run rspec
-Build files into ./build.
+### npm run build-pages
+Build static files into ./build directory.
 
 ```
-$ npm run rspec
+$ npm run build-pages
 ```
 
-### npm run deploy
-Push ./build files to gh-pages branch.
+### npm run deploy-pages
+Push static files in ./build directory for GitHub Pages.
 
 ```
-$ npm run deploy
+$ npm run deploy-pages
 ```
