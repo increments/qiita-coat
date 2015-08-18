@@ -1,5 +1,6 @@
 # qiita-coat
-The UI components for Qiita.
+The UI components for Qiita.  
+http://increments.github.io/qiita-coat/
 
 ## Install
 ```sh
