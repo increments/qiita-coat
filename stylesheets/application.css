@@ -213,12 +213,39 @@ input[type=button] {
     font-weight: bold;
     padding-bottom: 12px; }
 
-body {
-  margin: 0 auto;
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.footer-inner {
+  border-top: solid #eee 1px;
+  font-size: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
   width: 860px; }
 
+.header {
+  background-color: #f7f7f7; }
+  .header-inner {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    width: 860px; }
+  .header-navigation {
+    float: right; }
+    .header-navigation-link {
+      display: inline-block; }
+
 .main {
-  padding: 20px; }
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  padding-top: 20px;
+  width: 860px; }
 
 .markdown > *:first-child {
   margin-top: 0;
@@ -385,5 +412,5 @@ body {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   line-height: 18px;
   margin: 0;
-  padding: 8px 15px;
+  padding: 8px 16px;
   white-space: pre-wrap; }
