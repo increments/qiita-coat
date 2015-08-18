@@ -18,7 +18,12 @@
     float: right;
 
     &-link {
+      color: $color-qiita-light;
       display: inline-block;
+
+      &:hover {
+        color: #fff;
+      }
     }
   }
 }

@@ -16,6 +16,7 @@ $color-orange: #f89406;
 $color-pink: #c3325f;
 $color-purple: #7a43b6;
 $color-qiita: #59bb0c;
+$color-qiita-light: lighten($color-qiita, 30%);
 $color-red: #fe4d08;
 $color-text: #4a4a4a;
 $color-white: #fff;
