@@ -2242,8 +2242,24 @@ input[type=button] {
   display: inline-block;
   line-height: 1;
   overflow: hidden;
+  vertical-align: middle; }
+
+.avatar-example-child {
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 1;
+  overflow: hidden;
   vertical-align: middle;
-  margin-right: 12px; }
+  background-color: #fff;
+  border-radius: 2px;
+  bottom: -9%;
+  box-shadow: -2px -2px 0 rgba(255, 255, 255, 0.8);
+  position: absolute;
+  right: -15%; }
+
+.avatar-example-parent {
+  float: left;
+  position: relative; }
 
 .avatar-example-small {
   border-radius: 3px;
@@ -2255,6 +2271,13 @@ input[type=button] {
 
 .avatar-examples {
   margin-bottom: 12px; }
+  .avatar-examples:before {
+    content: "";
+    display: table; }
+  .avatar-examples:after {
+    clear: both;
+    content: "";
+    display: table; }
 
 a {
   color: #337ab7;

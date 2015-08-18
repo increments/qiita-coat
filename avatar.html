@@ -2,4 +2,14 @@
   @include avatar;
 }</code></pre></div></div></div><div class="article-section"><div class="article-section-heading">@mixin avatar-small</div><div class="article-example"><div class="avatar-examples"><img class="avatar-example-small" height="36" src="/qiita-coat/images/avatar-example-small.png" width="36" /></div><div class="markdown"><pre><code>.avatar-example-small {
   @include avatar-small;
+}</code></pre></div></div></div><div class="article-section"><div class="article-section-heading">@mixin avatar-parent</div><div class="article-example"><div class="avatar-examples"><div class="avatar-example-parent"><img class="avatar-example" height="64" src="/qiita-coat/images/avatar-example.png" width="64" /><img class="avatar-example-child" height="24" src="/qiita-coat/images/avatar-example-small.png" width="24" /></div></div><div class="markdown"><pre><code>.avatar-example {
+  @include avatar;
+}
+
+.avatar-example-child {
+  @include avatar-child;
+}
+
+.avatar-example-parent {
+  @include avatar-parent;
 }</code></pre></div></div></div></article></div></div></main><footer class="footer"><div class="footer-inner"><p>© 2015 Increments Inc.</p><p>Maintained by the developers at <a href="https://github.com/increments">Increments.</a></p></div></footer></body></html>
