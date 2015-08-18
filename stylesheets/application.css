@@ -2238,8 +2238,29 @@ input[type=button] {
     padding-bottom: 12px; }
 
 a {
-  color: inherit;
+  color: #337ab7;
   text-decoration: none; }
+
+body {
+  color: #4a4a4a; }
+
+.color-bar-background-color-code,
+.color-bar-color-qiita,
+.color-bar-color-text {
+  border-radius: 3px;
+  margin-bottom: 12px;
+  padding: 12px; }
+
+.color-bar-background-color-code {
+  background-color: #f7f7f7; }
+
+.color-bar-color-qiita {
+  background-color: #59bb0c;
+  color: #fff; }
+
+.color-bar-color-text {
+  background-color: #4a4a4a;
+  color: #fff; }
 
 .footer-inner {
   margin-left: auto;
@@ -2625,8 +2646,8 @@ a {
     max-width: 920px;
     padding: 20px;
     color: #fff;
-    padding-bottom: 12px;
-    padding-top: 12px; }
+    padding-bottom: 16px;
+    padding-top: 16px; }
     .header-inner:before {
       content: "";
       display: table; }
@@ -2634,6 +2655,8 @@ a {
       clear: both;
       content: "";
       display: table; }
+  .header-logo-link {
+    color: inherit; }
   .header-navigation {
     float: right; }
     .header-navigation-link {
