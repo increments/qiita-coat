@@ -2242,14 +2242,15 @@ a {
   text-decoration: none; }
 
 .footer-inner {
-  border-top: solid #eee 1px;
-  font-size: 13px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 860px;
+  padding: 20px;
+  border-top: solid #eee 1px;
+  font-size: 13px;
   margin-top: 40px;
   padding-bottom: 40px;
-  padding-top: 40px;
-  width: 860px; }
+  padding-top: 40px; }
 
 .grid-column-1-2 {
   box-sizing: border-box;
@@ -2282,7 +2283,7 @@ a {
 .grid-column-2-3,
 .grid-column-3-4 {
   background-color: #f7f7f7;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, "Liberation Mono", Menlo, Courler, monospace;
   border: solid 1px #ccc;
   padding: 8px; }
 
@@ -2301,6 +2302,13 @@ a {
 
 .grid-example-code {
   margin-top: 12px; }
+  .grid-example-code .task-list-item {
+    list-style-type: none; }
+  .grid-example-code .task-list-item-checkbox {
+    margin: 0.4em 0.5em 0 -1.3em;
+    vertical-align: top; }
+  .grid-example-code .task-list-item-checkbox[disabled] {
+    cursor: default; }
   .grid-example-code > *:first-child {
     margin-top: 0; }
   .grid-example-code > *:last-child {
@@ -2325,7 +2333,7 @@ a {
     background-color: #f7f7f7;
     border-radius: 3px;
     color: #4a4a4a;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: Consolas, "Liberation Mono", Menlo, Courler, monospace;
     font-size: 90%;
     padding: 2px 4px; }
   .grid-example-code del {
@@ -2467,14 +2475,16 @@ a {
     list-style-type: disc; }
 
 .header {
-  background-color: #59bb0c; }
+  background-color: #59bb0c;
+  width: 100%; }
   .header-inner {
-    color: #fff;
     margin-left: auto;
     margin-right: auto;
+    max-width: 860px;
+    padding: 20px;
+    color: #fff;
     padding-bottom: 12px;
-    padding-top: 12px;
-    width: 860px; }
+    padding-top: 12px; }
     .header-inner:before {
       content: "";
       display: table; }
@@ -2485,7 +2495,10 @@ a {
   .header-navigation {
     float: right; }
     .header-navigation-link {
+      color: #a8f56b;
       display: inline-block; }
+      .header-navigation-link:hover {
+        color: #fff; }
 
 .hero {
   background-color: #59bb0c;
@@ -2496,6 +2509,9 @@ a {
     border: solid 1px #fff;
     border-radius: 3px;
     padding: 12px 24px; }
+    .hero-button:hover {
+      background-color: #fff;
+      color: #59bb0c; }
     .hero-button-container {
       margin-top: 24px; }
   .hero-description {
@@ -2506,9 +2522,10 @@ a {
 .main-inner {
   margin-left: auto;
   margin-right: auto;
+  max-width: 860px;
+  padding: 20px;
   padding-bottom: 40px;
-  padding-top: 32px;
-  width: 860px; }
+  padding-top: 32px; }
   .main-inner:before {
     content: "";
     display: table; }
@@ -2570,6 +2587,16 @@ a {
         top: 0;
         width: 2px; }
 
+.markdown .task-list-item {
+  list-style-type: none; }
+
+.markdown .task-list-item-checkbox {
+  margin: 0.4em 0.5em 0 -1.3em;
+  vertical-align: top; }
+
+.markdown .task-list-item-checkbox[disabled] {
+  cursor: default; }
+
 .markdown > *:first-child {
   margin-top: 0; }
 
@@ -2600,7 +2627,7 @@ a {
   background-color: #f7f7f7;
   border-radius: 3px;
   color: #4a4a4a;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, "Liberation Mono", Menlo, Courler, monospace;
   font-size: 90%;
   padding: 2px 4px; }
 
