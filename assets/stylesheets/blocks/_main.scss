@@ -1,7 +1,20 @@
+@import "scss/utilities";
+
 .main {
+  @include clearfix;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 40px;
   padding-top: 20px;
   width: 860px;
+
+  &-main {
+    overflow: hidden;
+  }
+
+  &-sub {
+    float: left;
+    width: 220px;
+    padding-right: 12px;
+  }
 }

@@ -15,8 +15,8 @@ module Qiita
         slim :"roots/show"
       end
 
-      get "/markdown" do
-        slim :"docs/markdown"
+      get "/:document_id" do
+        slim :"docs/#{params[:document_id]}"
       end
     end
   end

@@ -1,0 +1,58 @@
+@mixin menu {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  font-size: 13px;
+  list-style: none;
+  margin-bottom: 15px;
+
+  &-item {
+    border-bottom: 1px solid #eee;
+    display: block;
+    padding: 8px 10px;
+    position: relative;
+    text-shadow: 0 1px 0 #fff;
+
+    &:first-child {
+      border-top: 0;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+
+      &:before {
+        border-top-left-radius: 2px;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px;
+
+      &:before {
+        border-bottom-left-radius: 2px;
+      }
+    }
+
+    &:hover {
+      background-color: #f9f9f9;
+      text-decoration: none;
+    }
+
+    &-selected {
+      background-color: #fff;
+      color: #222;
+      cursor: default;
+      font-weight: bold;
+
+      &:before {
+        background-color: #d26911;
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 2px;
+      }
+    }
+  }
+}
