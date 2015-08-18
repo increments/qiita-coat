@@ -1,7 +1,9 @@
+@import "scss/syntax-highlight";
 @import "scss/tasklist";
 @import "scss/variables";
 
 @mixin markdown {
+  @include syntax-highlight;
   @include tasklist;
 
   > *:first-child {
