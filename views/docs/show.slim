@@ -17,5 +17,8 @@ main.main
         a.menu-item[class=("menu-item-selected" if params[:document_id] == "menu") href=url("/menu")]
           i.fa.fa-fw.fa-bars>
           | Menu
+        a.menu-item[class=("menu-item-selected" if params[:document_id] == "panel") href=url("/panel")]
+          i.fa.fa-fw.fa-list-alt>
+          | Panel
     .main-main
       == slim :"docs/#{params[:document_id]}"

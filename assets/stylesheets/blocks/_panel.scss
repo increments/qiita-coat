@@ -1,0 +1,9 @@
+@import "scss/panel";
+
+.panel {
+  @include panel;
+
+  & + & {
+    margin-top: 12px;
+  }
+}
