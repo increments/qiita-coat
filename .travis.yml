@@ -2,3 +2,7 @@ language: ruby
 rvm:
 - 2.2.0
 script: npm run setup && npm run sass && npm run build-pages && npm run deploy-pages
+cache:
+  directories:
+  - node_modules
+  - vendor/bundle
