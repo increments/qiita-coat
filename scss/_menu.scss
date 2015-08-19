@@ -1,60 +1,22 @@
+@import "scss/panel";
+
 @mixin menu {
-  background-color: #fff;
-  border: 1px solid #d8d8d8;
-  border-radius: 3px;
+  @include panel;
   font-size: 13px;
   list-style: none;
 
   &-heading {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #eee;
-    color: #555;
-    display: block;
-    font-weight: bold;
+    border-bottom-color: #eee;
     padding: 8px 10px;
 
     &:hover {
       text-decoration: none;
     }
-
-    &:first-child {
-      border-top-right-radius: 2px;
-      border-top-left-radius: 2px;
-    }
-
-    &:last-child {
-      border-bottom-right-radius: 2px;
-      border-bottom-left-radius: 2px;
-      border-bottom: 0;
-    }
   }
 
   &-item {
-    border-bottom: 1px solid #eee;
-    display: block;
+    border-bottom-color: #eee;
     padding: 8px 10px;
-    position: relative;
-    text-shadow: 0 1px 0 #fff;
-
-    &:first-child {
-      border-top: 0;
-      border-top-left-radius: 2px;
-      border-top-right-radius: 2px;
-
-      &:before {
-        border-top-left-radius: 2px;
-      }
-    }
-
-    &:last-child {
-      border-bottom: 0;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
-
-      &:before {
-        border-bottom-left-radius: 2px;
-      }
-    }
 
     &:hover {
       background-color: #f9f9f9;
