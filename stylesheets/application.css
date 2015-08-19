@@ -2718,6 +2718,10 @@ body {
       .header-navigation-link:hover {
         color: #fff; }
 
+.help-text {
+  color: #777;
+  font-size: 90%; }
+
 .hero {
   background-color: #59bb0c;
   color: #fff;
@@ -3196,7 +3200,7 @@ body {
         border-bottom-left-radius: 2px; }
   .panel,
   .panel-heading {
-    font-size: 13px; }
+    font-size: 14px; }
   .panel:last-child {
     margin-bottom: 0; }
   .panel-examples {
