@@ -1,8 +1,18 @@
 @mixin panel {
-  background-color: #fff;
-  border: 1px solid #d8d8d8;
-  border-radius: 3px;
-  font-size: 14px;
+  &,
+  &-danger {
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+
+  &-danger &-heading {
+    background-color: #df3e3e;
+    border: 1px solid #a00;
+    color: #fff;
+    text-shadow: 0 -1px 0 #900;
+  }
 
   &-heading {
     background-color: #f7f7f7;

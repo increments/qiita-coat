@@ -2,9 +2,10 @@
 
 .panel {
   @include panel;
+  margin-bottom: 12px;
 
-  & + & {
-    margin-top: 12px;
+  &:last-child {
+    margin-bottom: 0;
   }
 
   &-examples {
