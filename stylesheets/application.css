@@ -2765,14 +2765,12 @@ body {
   padding-right: 24px; }
 
 .menu {
-  font-size: 13px;
   list-style: none; }
   .menu,
   .menu-danger {
     background-color: #fff;
     border: 1px solid #d8d8d8;
-    border-radius: 3px;
-    font-size: 14px; }
+    border-radius: 3px; }
   .menu-danger .menu-heading {
     background-color: #df3e3e;
     border: 1px solid #a00;
@@ -3157,8 +3155,7 @@ body {
   .panel-danger {
     background-color: #fff;
     border: 1px solid #d8d8d8;
-    border-radius: 3px;
-    font-size: 14px; }
+    border-radius: 3px; }
   .panel-danger .panel-heading {
     background-color: #df3e3e;
     border: 1px solid #a00;
