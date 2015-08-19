@@ -6,7 +6,7 @@ var uglify = require('gulp-uglify');
 var watch = require('gulp-watch');
 var webpack = require('webpack-stream');
 
-gulp.task('deploy', function() {
+gulp.task('deploy-pages', function() {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
 });

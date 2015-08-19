@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gulp",
     "build-pages": "bundle exec rspec",
-    "deploy-pages": "gulp deploy",
+    "deploy-pages": "gulp deploy-pages",
     "sass": "gulp sass",
     "setup": "npm install && bundle install && bower install",
     "start": "bundle exec rackup",
