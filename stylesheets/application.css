@@ -2768,17 +2768,16 @@ body {
   background-color: #fff;
   border: 1px solid #d8d8d8;
   border-radius: 3px;
+  font-size: 14px;
   font-size: 13px;
   list-style: none; }
   .menu-heading {
     background-color: #f7f7f7;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #d8d8d8;
     color: #555;
     display: block;
     font-weight: bold;
     padding: 8px 10px; }
-    .menu-heading:hover {
-      text-decoration: none; }
     .menu-heading:first-child {
       border-top-right-radius: 2px;
       border-top-left-radius: 2px; }
@@ -2787,9 +2786,9 @@ body {
       border-bottom-left-radius: 2px;
       border-bottom: 0; }
   .menu-item {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #d8d8d8;
     display: block;
-    padding: 8px 10px;
+    padding: 12px;
     position: relative;
     text-shadow: 0 1px 0 #fff; }
     .menu-item:first-child {
@@ -2804,6 +2803,14 @@ body {
       border-bottom-right-radius: 2px; }
       .menu-item:last-child:before {
         border-bottom-left-radius: 2px; }
+  .menu-heading {
+    border-bottom-color: #eee;
+    padding: 8px 10px; }
+    .menu-heading:hover {
+      text-decoration: none; }
+  .menu-item {
+    border-bottom-color: #eee;
+    padding: 8px 10px; }
     .menu-item:hover {
       background-color: #f9f9f9;
       text-decoration: none; }
@@ -3147,7 +3154,7 @@ body {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d8d8d8;
     color: #555;
-    font-size: 14px;
+    display: block;
     font-weight: bold;
     padding: 8px 10px; }
     .panel-heading:first-child {
@@ -3177,3 +3184,5 @@ body {
         border-bottom-left-radius: 2px; }
   .panel + .panel {
     margin-top: 12px; }
+  .panel-examples {
+    margin-bottom: 12px; }
