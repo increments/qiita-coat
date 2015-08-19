@@ -3137,3 +3137,43 @@ body {
     border-top: solid 1px #d9d9d9; }
   .markdown ul > li {
     list-style-type: disc; }
+
+.panel {
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  font-size: 14px; }
+  .panel-heading {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d8d8d8;
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 10px; }
+    .panel-heading:first-child {
+      border-top-right-radius: 2px;
+      border-top-left-radius: 2px; }
+    .panel-heading:last-child {
+      border-bottom-right-radius: 2px;
+      border-bottom-left-radius: 2px;
+      border-bottom: 0; }
+  .panel-item {
+    border-bottom: 1px solid #d8d8d8;
+    display: block;
+    padding: 12px;
+    position: relative;
+    text-shadow: 0 1px 0 #fff; }
+    .panel-item:first-child {
+      border-top: 0;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px; }
+      .panel-item:first-child:before {
+        border-top-left-radius: 2px; }
+    .panel-item:last-child {
+      border-bottom: 0;
+      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: 2px; }
+      .panel-item:last-child:before {
+        border-bottom-left-radius: 2px; }
+  .panel + .panel {
+    margin-top: 12px; }
