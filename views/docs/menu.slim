@@ -1,0 +1,39 @@
+article.article
+  h1.article-heading
+    | Menu
+  p
+    | For navigation menus.
+  .article-section
+    .article-section-heading
+      | @mixin menu
+    .article-example
+      .avatar-examples
+        nav.menu
+          a.menu-item.menu-item-selected[href=""]
+            i.fa.fa-fw.fa-th-large>
+            | .menu-item-selected
+          a.menu-item[href=""]
+            i.fa.fa-fw.fa-file-text-o>
+            | .menu-item
+          a.menu-item[href=""]
+            i.fa.fa-fw.fa-paint-brush>
+            | .menu-item
+        nav.menu
+          span.menu-heading
+            | .menu-heading
+          a.menu-item.menu-item-selected[href=""]
+            i.fa.fa-fw.fa-th-large>
+            | .menu-item-selected
+          a.menu-item[href=""]
+            i.fa.fa-fw.fa-file-text-o>
+            | .menu-item
+          a.menu-item[href=""]
+            i.fa.fa-fw.fa-paint-brush>
+            | .menu-item
+      .markdown
+        pre
+          code
+            |
+              .menu {
+                @include menu;
+              }

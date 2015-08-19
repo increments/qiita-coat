@@ -4,7 +4,30 @@
   border-radius: 3px;
   font-size: 13px;
   list-style: none;
-  margin-bottom: 15px;
+
+  &-heading {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    display: block;
+    font-weight: bold;
+    padding: 8px 10px;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:first-child {
+      border-top-right-radius: 2px;
+      border-top-left-radius: 2px;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 2px;
+      border-bottom-left-radius: 2px;
+      border-bottom: 0;
+    }
+  }
 
   &-item {
     border-bottom: 1px solid #eee;

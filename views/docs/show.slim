@@ -14,5 +14,8 @@ main.main
         a.menu-item[class=("menu-item-selected" if params[:document_id] == "avatar") href=url("/avatar")]
           i.fa.fa-fw.fa-smile-o>
           | Avatar
+        a.menu-item[class=("menu-item-selected" if params[:document_id] == "menu") href=url("/menu")]
+          i.fa.fa-fw.fa-bars>
+          | Menu
     .main-main
       == slim :"docs/#{params[:document_id]}"

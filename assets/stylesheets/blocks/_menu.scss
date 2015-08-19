@@ -2,4 +2,8 @@
 
 .menu {
   @include menu;
+
+   & + & {
+     margin-top: 12px;
+   }
 }
