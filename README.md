@@ -1,4 +1,4 @@
-# qiita-coat
+# Qiita:Coat
 The UI components for Qiita.  
 http://increments.github.io/qiita-coat/
 
