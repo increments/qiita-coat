@@ -1,3 +1,6 @@
+## v0.0.3
+- Add panel component
+
 ## v0.0.2
 - Add colors component
 - Add menu component
