@@ -2237,20 +2237,94 @@ input[type=button] {
     font-weight: bold;
     padding-bottom: 12px; }
 
+.avatar-example {
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 1;
+  overflow: hidden;
+  vertical-align: middle; }
+
+.avatar-example-child {
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 1;
+  overflow: hidden;
+  vertical-align: middle;
+  background-color: #fff;
+  border-radius: 2px;
+  bottom: -9%;
+  box-shadow: -2px -2px 0 rgba(255, 255, 255, 0.8);
+  position: absolute;
+  right: -15%; }
+
+.avatar-example-parent {
+  float: left;
+  position: relative; }
+
+.avatar-example-small {
+  border-radius: 3px;
+  display: inline-block;
+  line-height: 1;
+  overflow: hidden;
+  vertical-align: middle;
+  border-radius: 2px; }
+
+.avatar-examples {
+  margin-bottom: 12px; }
+  .avatar-examples:before {
+    content: "";
+    display: table; }
+  .avatar-examples:after {
+    clear: both;
+    content: "";
+    display: table; }
+
 a {
-  color: inherit;
+  color: #337ab7;
   text-decoration: none; }
 
-.footer-inner {
+body {
+  color: #4a4a4a;
+  font-family: "Helvetica Neue", Helvetica, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
+
+.color-bar-background-color-code,
+.color-bar-color-link,
+.color-bar-color-qiita,
+.color-bar-color-text {
+  border-radius: 3px;
+  padding: 12px; }
+
+.color-bar-background-color-code,
+.color-bar-color-link,
+.color-bar-color-qiita {
+  margin-bottom: 12px; }
+
+.color-bar-background-color-code {
+  background-color: #f7f7f7; }
+
+.color-bar-color-link {
+  background-color: #337ab7;
+  color: #fff; }
+
+.color-bar-color-qiita {
+  background-color: #59bb0c;
+  color: #fff; }
+
+.color-bar-color-text {
+  background-color: #4a4a4a;
+  color: #fff; }
+
+.footer {
   margin-left: auto;
   margin-right: auto;
   max-width: 920px;
-  padding: 20px;
-  border-top: solid #eee 1px;
-  font-size: 13px;
-  margin-top: 40px;
-  padding-bottom: 40px;
-  padding-top: 40px; }
+  padding: 20px; }
+  .footer-inner {
+    border-top: solid #eee 1px;
+    font-size: 13px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px; }
 
 .grid-column-1-2 {
   box-sizing: border-box;
@@ -2625,8 +2699,8 @@ a {
     max-width: 920px;
     padding: 20px;
     color: #fff;
-    padding-bottom: 12px;
-    padding-top: 12px; }
+    padding-bottom: 16px;
+    padding-top: 16px; }
     .header-inner:before {
       content: "";
       display: table; }
@@ -2634,6 +2708,8 @@ a {
       clear: both;
       content: "";
       display: table; }
+  .header-logo-link {
+    color: inherit; }
   .header-navigation {
     float: right; }
     .header-navigation-link {
@@ -2650,6 +2726,7 @@ a {
   .hero-button {
     border: solid 1px #fff;
     border-radius: 3px;
+    color: #fff;
     padding: 12px 24px; }
     .hero-button:hover {
       background-color: #fff;
