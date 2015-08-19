@@ -20,6 +20,7 @@ RSpec.describe "Site spec", :sitespec do
     /images/avatar-example-small.png
     /grid
     /markdown
+    /menu
     /stylesheets/application.css
   ].each do |path|
     describe "GET #{path}", :sitespec do
