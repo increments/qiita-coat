@@ -21,6 +21,7 @@ RSpec.describe "Site spec", :sitespec do
     /grid
     /markdown
     /menu
+    /panel
     /stylesheets/application.css
   ].each do |path|
     describe "GET #{path}", :sitespec do
