@@ -4,5 +4,6 @@ rvm:
 script: npm run setup && npm run sass && npm run build-pages && npm run deploy-pages
 cache:
   directories:
+  - bower_components
   - node_modules
   - vendor/bundle
