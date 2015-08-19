@@ -4,6 +4,9 @@
   "license": "MIT",
   "repository": "increments/qiita-coat",
   "homepage": "https://github.com/increments/qiita-coat",
+  "files": [
+    "scss"
+  ],
   "scripts": {
     "build": "gulp",
     "build-pages": "bundle exec rspec",
