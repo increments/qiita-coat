@@ -1,6 +1,6 @@
-@import "scss/syntax-highlight";
-@import "scss/tasklist";
-@import "scss/variables";
+@import "./syntax-highlight";
+@import "./tasklist";
+@import "./variables";
 
 @mixin markdown {
   @include syntax-highlight;
