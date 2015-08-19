@@ -56,3 +56,6 @@ DEPENDENCIES
   sinatra-contrib
   sitespec
   slim
+
+BUNDLED WITH
+   1.10.2
