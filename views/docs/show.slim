@@ -20,5 +20,8 @@ main.main
         a.menu-item[class=("menu-item-selected" if params[:document_id] == "panel") href=url("/panel")]
           i.fa.fa-fw.fa-list-alt>
           | Panel
+        a.menu-item[class=("menu-item-selected" if params[:document_id] == "utilities") href=url("/utilities")]
+          i.fa.fa-fw.fa-wrench>
+          | Utilities
     .main-main
       == slim :"docs/#{params[:document_id]}"

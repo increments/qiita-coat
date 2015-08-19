@@ -10,3 +10,8 @@
     display: table;
   }
 }
+
+@mixin help-text {
+  color: #777;
+  font-size: 90%;
+}

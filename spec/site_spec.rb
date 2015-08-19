@@ -23,6 +23,7 @@ RSpec.describe "Site spec", :sitespec do
     /menu
     /panel
     /stylesheets/application.css
+    /utilities
   ].each do |path|
     describe "GET #{path}", :sitespec do
       it "returns 200" do

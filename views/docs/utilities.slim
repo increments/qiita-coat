@@ -1,0 +1,27 @@
+article.article
+  h1.article-heading
+    | Utilities
+  p
+    | A.k.a. Junk Yard.
+  .article-section
+    .article-section-heading
+      | @mixin help-text
+    .article-example
+      .panel
+        .panel-heading
+          | Help text example
+        .panel-item
+          | Lorem ipsum dolor sit amet
+        .panel-item
+          | Consectetur adipisicing elit
+        .panel-item
+          .help-text
+            i.fa.fa-bullhorn>
+            | This is an example message decorated with .help-text
+      .markdown
+        pre
+          code
+            |
+              .help-text {
+                @include help-text;
+              }
