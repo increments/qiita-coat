@@ -9,7 +9,7 @@ var webpack = require('webpack-stream');
 gulp.task('deploy-pages', function() {
   var options = {};
   if (process.env.GIT_ORIGIN) {
-    options.removeUrl = process.env.GIT_ORIGIN;
+    options.remoteUrl = process.env.GIT_ORIGIN;
   }
   return gulp.src('./build/**/*')
     .pipe(ghPages(options));
