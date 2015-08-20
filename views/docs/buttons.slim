@@ -1,0 +1,18 @@
+article.article
+  h1.article-heading
+    | Buttons
+  p
+    | For clickable buttons.
+  .article-section
+    .article-section-heading
+      | @mixin button
+    .article-example
+      a.button[href=""]
+        | .button
+      .markdown
+        pre
+          code
+            |
+              .button {
+                @include button;
+              }

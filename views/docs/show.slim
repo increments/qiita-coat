@@ -20,6 +20,9 @@ main.main
         a.menu-item[class=("menu-item-selected" if params[:document_id] == "panel") href=url("/panel")]
           i.fa.fa-fw.fa-list-alt>
           | Panel
+        a.menu-item[class=("menu-item-selected" if params[:document_id] == "buttons") href=url("/buttons")]
+          i.fa.fa-fw.fa-square>
+          | Buttons
         a.menu-item[class=("menu-item-selected" if params[:document_id] == "utilities") href=url("/utilities")]
           i.fa.fa-fw.fa-wrench>
           | Utilities
