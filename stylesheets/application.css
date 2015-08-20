@@ -2799,8 +2799,7 @@ body {
     border-bottom: 1px solid #d8d8d8;
     display: block;
     padding: 12px;
-    position: relative;
-    text-shadow: 0 1px 0 #fff; }
+    position: relative; }
     .menu-item:first-child {
       border-top: 0;
       border-top-left-radius: 2px;
@@ -3184,8 +3183,7 @@ body {
     border-bottom: 1px solid #d8d8d8;
     display: block;
     padding: 12px;
-    position: relative;
-    text-shadow: 0 1px 0 #fff; }
+    position: relative; }
     .panel-item:first-child {
       border-top: 0;
       border-top-left-radius: 2px;
