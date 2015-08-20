@@ -1,3 +1,7 @@
+## v0.0.4
+- Add utilities component
+- Fix path resolve error
+
 ## v0.0.3
 - Add panel component
 
