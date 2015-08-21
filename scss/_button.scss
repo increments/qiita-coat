@@ -1,5 +1,17 @@
 @import "./variables";
 
+@mixin button-disabled {
+  &,
+  &:hover {
+    background-color: rgba(229, 229, 229, 0.5);
+    background-image: none;
+    border-color: rgba(197, 197, 197, 0.5);
+    box-shadow: none;
+    color: rgba(102, 102, 102, 0.5);
+    cursor: default;
+  }
+}
+
 @mixin button {
   background-color: #eee;
   background-image: linear-gradient(#fcfcfc, #eee);
@@ -36,15 +48,7 @@
 
   &:disabled,
   &.disabled {
-    &,
-    &:hover {
-      background-color: rgba(229, 229, 229, 0.5);
-      background-image: none;
-      border-color: rgba(197, 197, 197, 0.5);
-      box-shadow: none;
-      color: rgba(102, 102, 102, 0.5);
-      cursor: default;
-    }
+    @include button-disabled;
   }
 
   &:focus {
@@ -68,6 +72,16 @@
   display: block;
   width: 100%;
   text-align: center;
+}
+
+@mixin button-danger-disabled {
+  &,
+  &:hover {
+    color: #cb7f7f;
+    background-color: #efefef;
+    background-image: linear-gradient(#fefefe, #efefef);
+    border-color: #e1e1e1;
+  }
 }
 
 @mixin button-danger {
@@ -94,13 +108,7 @@
 
   &:disabled,
   &.disabled {
-    &,
-    &:hover {
-      color: #cb7f7f;
-      background-color: #efefef;
-      background-image: linear-gradient(#fefefe, #efefef);
-      border-color: #e1e1e1;
-    }
+    @include button-danger-disabled;
   }
 
   &:hover,
@@ -110,6 +118,16 @@
       color: #b33630;
       background-color: #fff;
     }
+  }
+}
+
+@mixin button-outline-disabled {
+  &,
+  &:hover {
+    color: $color-text;
+    background-color: #fff;
+    background-image: none;
+    border-color: #e5e5e5;
   }
 }
 
@@ -143,13 +161,17 @@
 
   &:disabled,
   &.disabled {
-    &,
-    &:hover {
-      color: $color-text;
-      background-color: #fff;
-      background-image: none;
-      border-color: #e5e5e5;
-    }
+    @include button-outline-disabled;
+  }
+}
+
+@mixin button-primary-disabled {
+  &,
+  &:hover {
+    background-color: #add39f;
+    background-image: linear-gradient(#c3ecb4, #add39f);
+    border-color: #b9dcac #b9dcac #a7c89b;
+    color: #fefefe;
   }
 }
 
@@ -181,13 +203,7 @@
 
   &:disabled,
   &.disabled {
-    &,
-    &:hover {
-      background-color: #add39f;
-      background-image: linear-gradient(#c3ecb4, #add39f);
-      border-color: #b9dcac #b9dcac #a7c89b;
-      color: #fefefe;
-    }
+    @include button-primary-disabled;
   }
 }
 
