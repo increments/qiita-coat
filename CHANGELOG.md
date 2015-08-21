@@ -1,3 +1,6 @@
+## v0.0.5
+- Add buttons component
+
 ## v0.0.4
 - Add utilities component
 - Fix path resolve error
