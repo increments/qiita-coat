@@ -3,7 +3,9 @@ html
   head
     meta[charset="UTF-8"]
     title
-      | Qiita:Coat
+      - title = yield_content :title
+      - title += " - Qiita:Coat" if title != "Qiita:Coat"
+      = title
     link[href=url("/stylesheets/application.css") media="all" rel="stylesheet"]
   body
     header.header

@@ -1,4 +1,5 @@
 require "sinatra/base"
+require "sinatra/content_for"
 require "sinatra/reloader"
 require "slim"
 
@@ -8,6 +9,8 @@ module Qiita
       configure :development do
         register Sinatra::Reloader
       end
+
+      helpers Sinatra::ContentFor
 
       helpers do
         def url(path, absolute = false, *args)
