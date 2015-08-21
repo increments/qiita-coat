@@ -75,6 +75,37 @@
   text-align: center;
 }
 
+@mixin button-count {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-left: 0;
+  border-top-right-radius: 3px;
+  color: $color-text;
+  float: left;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 2px 7px;
+  vertical-align: middle;
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $color-link;
+    cursor: pointer;
+  }
+}
+
+@mixin button-countable {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  float: left;
+}
+
 @mixin button-danger-disabled {
   &,
   &:hover {

@@ -1,6 +1,23 @@
 @import "scss/button";
+@import "scss/utilities";
 
-.buttons > button {
+.button-block-small,
+.button-block,
+.button-danger-disabled,
+.button-danger-small,
+.button-danger,
+.button-disabled,
+.button-expandable,
+.button-group,
+.button-grouped-small,
+.button-grouped,
+.button-outline-disabled,
+.button-outline-small,
+.button-outline,
+.button-primary-disabled,
+.button-primary-small,
+.button-primary,
+.button-small {
   margin-right: 12px;
 }
 
@@ -17,6 +34,17 @@
   @include button;
   @include button-block;
   @include button-small;
+}
+
+.button-count {
+  @include button-count;
+}
+
+.button-countable {
+  @include button;
+  @include button-countable;
+  @include button-small;
+  margin-right: 0;
 }
 
 .button-disabled {
@@ -97,5 +125,6 @@
 }
 
 .buttons {
+  @include clearfix;
   margin-bottom: 12px;
 }

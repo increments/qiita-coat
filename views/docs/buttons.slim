@@ -217,6 +217,29 @@ article.article
               }
   .article-section
     .article-section-heading
+      | @mixin button-countable
+    .article-example
+      .buttons
+        button.button-countable
+          i.fa.fa-thumbs-up>
+          | .button-countable
+        .button-count
+          | .button-count
+      .markdown
+        pre
+          code
+            |
+              .button-count {
+                @include button-count;
+              }
+
+              .button-countable {
+                @include button;
+                @include button-countable;
+                @include button-small;
+              }
+  .article-section
+    .article-section-heading
       | @mixin button-expandable
     .article-example
       .buttons
