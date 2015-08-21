@@ -3893,7 +3893,8 @@ body {
 
 .help-text {
   color: #777;
-  font-size: 90%; }
+  font-size: 90%;
+  margin-bottom: 12px; }
 
 .hero {
   background-color: #59bb0c;
