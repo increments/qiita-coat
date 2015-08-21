@@ -8,7 +8,7 @@ RSpec.describe "Site spec", :sitespec do
 
   %w[
     /
-    /avatar
+    /avatars
     /buttons
     /colors
     /fonts/fontawesome-webfont.eot
@@ -21,8 +21,8 @@ RSpec.describe "Site spec", :sitespec do
     /images/avatar-example-small.png
     /grid
     /markdown
-    /menu
-    /panel
+    /menus
+    /panels
     /stylesheets/application.css
     /utilities
   ].each do |path|
