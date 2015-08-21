@@ -1,4 +1,4 @@
-# Qiita:Coat
+# Qiita:Coat [![Build Status](https://travis-ci.org/increments/qiita-coat.svg?branch=master)](https://travis-ci.org/increments/qiita-coat)
 The UI components for Qiita.  
 http://increments.github.io/qiita-coat/
 
