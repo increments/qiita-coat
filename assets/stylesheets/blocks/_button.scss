@@ -3,15 +3,21 @@
 .button,
 .button-danger,
 .button-danger-small,
+.button-outline,
+.button-outline-small,
 .button-primary,
 .button-primary-small
 .button-small {
-  margin-bottom: 12px;
   margin-right: 12px;
 }
 
 .button {
   @include button;
+}
+
+.button-block {
+  @include button;
+  @include button-block;
 }
 
 .button-danger {
@@ -22,6 +28,21 @@
 .button-danger-small {
   @include button;
   @include button-danger;
+  @include button-small;
+}
+
+.button-group {
+  margin-bottom: 12px;
+}
+
+.button-outline {
+  @include button;
+  @include button-outline;
+}
+
+.button-outline-small {
+  @include button;
+  @include button-outline;
   @include button-small;
 }
 
