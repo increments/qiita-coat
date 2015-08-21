@@ -40,8 +40,13 @@
   @include button-small;
 }
 
-.buttons {
-  margin-bottom: 12px;
+.button-group {
+  @include button-group;
+}
+
+.button-grouped {
+  @include button;
+  @include button-grouped;
 }
 
 .button-outline {
@@ -79,4 +84,8 @@
 .button-small {
   @include button;
   @include button-small;
+}
+
+.buttons {
+  margin-bottom: 12px;
 }
