@@ -58,6 +58,14 @@
   @include button;
   @include button-grouped;
   @include button-small;
+}</code></pre></div></div></div><div class="article-section"><div class="article-section-heading">@mixin button-countable</div><div class="article-example"><div class="buttons"><button class="button-countable"><i class="fa fa-thumbs-up"></i> .button-countable</button><div class="button-count">.button-count</div></div><div class="markdown"><pre><code>.button-count {
+  @include button-count;
+}
+
+.button-countable {
+  @include button;
+  @include button-countable;
+  @include button-small;
 }</code></pre></div></div></div><div class="article-section"><div class="article-section-heading">@mixin button-expandable</div><div class="article-example"><div class="buttons"><a class="button-expandable">...</a></div><div class="markdown"><pre><code>.button-expandable {
   @include button-expandable;
 }</code></pre></div></div></div></article></div></div></main><footer class="footer"><div class="footer-inner"><p>© 2015 Increments Inc.</p><p>Maintained by the developers at <a href="https://github.com/increments" target="_blank">Increments.</a></p></div></footer></body></html>

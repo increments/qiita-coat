@@ -2287,7 +2287,23 @@ body {
   color: #4a4a4a;
   font-family: "Helvetica Neue", Helvetica, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
 
-.buttons > button {
+.button-block-small,
+.button-block,
+.button-danger-disabled,
+.button-danger-small,
+.button-danger,
+.button-disabled,
+.button-expandable,
+.button-group,
+.button-grouped-small,
+.button-grouped,
+.button-outline-disabled,
+.button-outline-small,
+.button-outline,
+.button-primary-disabled,
+.button-primary-small,
+.button-primary,
+.button-small {
   margin-right: 12px; }
 
 .button {
@@ -2445,6 +2461,81 @@ body {
   .button-block-small.selected:focus {
     border-color: #51a7e8; }
   .button-block-small.selected:hover {
+    background-color: #cfcfcf; }
+
+.button-count {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-left: 0;
+  border-top-right-radius: 3px;
+  color: #4a4a4a;
+  float: left;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 2px 7px;
+  vertical-align: middle; }
+  .button-count:hover,
+  .button-count:active {
+    text-decoration: none; }
+  .button-count:hover {
+    color: #337ab7;
+    cursor: pointer; }
+
+.button-countable {
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-radius: 3px;
+  border: 1px solid #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 12px;
+  position: relative;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  float: left;
+  padding: 2px 10px;
+  margin-right: 0; }
+  .button-countable:active,
+  .button-countable:hover {
+    background-color: #ddd;
+    background-image: linear-gradient(#eee, #ddd);
+    border-color: #ccc;
+    text-decoration: none; }
+  .button-countable:active,
+  .button-countable.selected {
+    background-color: #dcdcdc;
+    background-image: none;
+    border-color: #b5b5b5;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15); }
+  .button-countable:disabled,
+  .button-countable:disabled:hover,
+  .button-countable.disabled,
+  .button-countable.disabled:hover {
+    background-color: rgba(229, 229, 229, 0.5);
+    background-image: none;
+    border-color: rgba(197, 197, 197, 0.5);
+    box-shadow: none;
+    color: rgba(102, 102, 102, 0.5);
+    cursor: default; }
+  .button-countable:focus {
+    border-color: #51a7e8;
+    box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+    outline: none;
+    text-decoration: none; }
+  .button-countable:focus:hover,
+  .button-countable.selected:focus {
+    border-color: #51a7e8; }
+  .button-countable.selected:hover {
     background-color: #cfcfcf; }
 
 .button-disabled {
@@ -3363,6 +3454,13 @@ body {
 
 .buttons {
   margin-bottom: 12px; }
+  .buttons:before {
+    content: "";
+    display: table; }
+  .buttons:after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .color-bar-background-color-code,
 .color-bar-color-link,
