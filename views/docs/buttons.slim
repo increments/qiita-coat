@@ -56,14 +56,31 @@ article.article
               .button {
                 @include button;
               }
-              
+
               .button-block {
+                @include button;
                 @include button-block;
+              }
+
+              .button-block-small {
+                @include button;
+                @include button-block;
+                @include button-small;
+              }
+
+              .button-disabled {
+                @include button;
+                @include button-disabled;
               }
 
               .button-danger {
                 @include button;
                 @include button-danger;
+              }
+
+              .button-danger-disabled {
+                @include button;
+                @include button-danger-disabled;
               }
 
               .button-danger-small {
@@ -72,9 +89,23 @@ article.article
                 @include button-small;
               }
 
+              .button-group {
+                @include button-group;
+              }
+
+              .button-grouped {
+                @include button;
+                @include button-grouped;
+              }
+
               .button-outline {
                 @include button;
                 @include button-outline;
+              }
+
+              .button-outline-disabled {
+                @include button;
+                @include button-outline-disabled;
               }
 
               .button-outline-small {
@@ -86,6 +117,11 @@ article.article
               .button-primary {
                 @include button;
                 @include button-primary;
+              }
+
+              .button-primary-disabled {
+                @include button;
+                @include button-primary-disabled;
               }
 
               .button-primary-small {
