@@ -49,6 +49,9 @@ article.article
             | .button-grouped
           button.button-grouped
             | .button-grouped
+      .buttons
+        a.button-expandable
+          | ...
       .markdown
         pre
           code
@@ -87,6 +90,10 @@ article.article
                 @include button;
                 @include button-danger;
                 @include button-small;
+              }
+
+              .button-expandable {
+                @include button-expandable;
               }
 
               .button-group {

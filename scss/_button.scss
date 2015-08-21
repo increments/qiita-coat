@@ -122,6 +122,31 @@
   }
 }
 
+@mixin button-expandable {
+  background: #ddd;
+  border-radius: 1px;
+  color: #555;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  height: 12px;
+  line-height: 6px;
+  padding: 0 5px;
+  text-decoration: none;
+  vertical-align: middle;
+
+  &:active {
+    background-color: #4183c4;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: #ccc;
+    text-decoration: none;
+  }
+}
+
 @mixin button-group {
   @include clearfix;
   display: inline-block;

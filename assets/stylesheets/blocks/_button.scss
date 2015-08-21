@@ -40,6 +40,10 @@
   @include button-small;
 }
 
+.button-expandable {
+  @include button-expandable;
+}
+
 .button-group {
   @include button-group;
 }
