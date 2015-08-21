@@ -10,48 +10,6 @@ article.article
       .buttons
         button.button
           | .button
-        button.button-disabled
-          | .button-disabled
-        button.button-small
-          | .button-small
-      .buttons
-        button.button-primary
-          | .button-primary
-        button.button-primary-disabled
-          | .button-primary-disabled
-        button.button-primary-small
-          | .button-primary-small
-      .buttons
-        button.button-danger
-          | .button-danger
-        button.button-danger-disabled
-          | .button-danger-disabled
-        button.button-danger-small
-          | .button-danger-small
-      .buttons
-        button.button-outline
-          | .button-outline
-        button.button-outline-disabled
-          | .button-outline-disabled
-        button.button-outline-small
-          | .button-outline-small
-      .buttons
-        button.button-block
-          | .button-block
-      .buttons
-        button.button-block-small
-          | .button-block-small
-      .buttons
-        .button-group
-          button.button-grouped
-            | .button-grouped
-          button.button-grouped
-            | .button-grouped
-          button.button-grouped
-            | .button-grouped
-      .buttons
-        a.button-expandable
-          | ...
       .markdown
         pre
           code
@@ -59,7 +17,156 @@ article.article
               .button {
                 @include button;
               }
+  .article-section
+    .article-section-heading
+      | @mixin button-primary
+    .article-example
+      .buttons
+        button.button-primary
+          | .button-primary
+      .markdown
+        pre
+          code
+            |
+              .button-primary {
+                @include button;
+                @include button-primary;
+              }
+  .article-section
+    .article-section-heading
+      | @mixin button-danger
+    .article-example
+      .buttons
+        button.button-danger
+          | .button-danger
+      .markdown
+        pre
+          code
+            |
+              .button-danger {
+                @include button;
+                @include button-danger;
+              }
+  .article-section
+    .article-section-heading
+      | @mixin button-outline
+    .article-example
+      .buttons
+        button.button-outline
+          | .button-outline
+      .markdown
+        pre
+          code
+            |
+              .button-outline {
+                @include button;
+                @include button-outline;
+              }
+  .article-section
+    .article-section-heading
+      | @mixin button-small
+    .article-example
+      .buttons
+        button.button-small
+          | .button-small
+        button.button-primary-small
+          | .button-primary-small
+        button.button-danger-small
+          | .button-danger-small
+      .markdown
+        pre
+          code
+            |
+              .button-small {
+                @include button;
+                @include button-small;
+              }
 
+              .button-primary-small {
+                @include button;
+                @include button-primary;
+                @include button-small;
+              }
+
+              .button-danger-small {
+                @include button;
+                @include button-danger;
+                @include button-small;
+              }
+  .article-section
+    .article-section-heading
+      | @mixin button-disabled
+    .article-example
+      .buttons
+        button.button-disabled
+          | .button-disabled
+      .markdown
+        pre
+          code
+            |
+              .button-disabled {
+                @include button;
+                @include button-disabled;
+              }
+  .article-section
+    .article-section-heading
+      | @mixin button-primary-disabled
+    .article-example
+      .buttons
+        button.button-primary-disabled
+          | .button-primary-disabled
+      .markdown
+        pre
+          code
+            |
+              .button-primary-disabled {
+                @include button;
+                @include button-primary-disabled;
+              }
+  .article-section
+    .article-section-heading
+      | @mixin button-danger-disabled
+    .article-example
+      .buttons
+        button.button-danger-disabled
+          | .button-danger-disabled
+      .markdown
+        pre
+          code
+            |
+              .button-danger-disabled {
+                @include button;
+                @include button-danger-disabled;
+              }
+  .article-section
+    .article-section-heading
+      | @mixin button-outline-disabled
+    .article-example
+      .buttons
+        button.button-outline-disabled
+          | .button-outline-disabled
+      .markdown
+        pre
+          code
+            |
+              .button-outline-disabled {
+                @include button;
+                @include button-outline-disabled;
+              }
+  .article-section
+    .article-section-heading
+      | @mixin button-block
+    .article-example
+      .buttons
+        button.button-block
+          | .button-block
+      .buttons
+        button.button-block-small
+          | .button-block-small
+      .markdown
+        pre
+          code
+            |
               .button-block {
                 @include button;
                 @include button-block;
@@ -70,32 +177,30 @@ article.article
                 @include button-block;
                 @include button-small;
               }
-
-              .button-disabled {
-                @include button;
-                @include button-disabled;
-              }
-
-              .button-danger {
-                @include button;
-                @include button-danger;
-              }
-
-              .button-danger-disabled {
-                @include button;
-                @include button-danger-disabled;
-              }
-
-              .button-danger-small {
-                @include button;
-                @include button-danger;
-                @include button-small;
-              }
-
-              .button-expandable {
-                @include button-expandable;
-              }
-
+  .article-section
+    .article-section-heading
+      | @mixin button-group
+    .article-example
+      .buttons
+        .button-group
+          button.button-grouped
+            | .button-grouped
+          button.button-grouped
+            | .button-grouped
+          button.button-grouped
+            | .button-grouped
+      .buttons
+        .button-group
+          button.button-grouped-small
+            | .button-grouped-small
+          button.button-grouped-small
+            | .button-grouped-small
+          button.button-grouped-small
+            | .button-grouped-small
+      .markdown
+        pre
+          code
+            |
               .button-group {
                 @include button-group;
               }
@@ -105,39 +210,22 @@ article.article
                 @include button-grouped;
               }
 
-              .button-outline {
+              .button-grouped-small {
                 @include button;
-                @include button-outline;
-              }
-
-              .button-outline-disabled {
-                @include button;
-                @include button-outline-disabled;
-              }
-
-              .button-outline-small {
-                @include button;
-                @include button-outline;
+                @include button-grouped;
                 @include button-small;
               }
-
-              .button-primary {
-                @include button;
-                @include button-primary;
-              }
-
-              .button-primary-disabled {
-                @include button;
-                @include button-primary-disabled;
-              }
-
-              .button-primary-small {
-                @include button;
-                @include button-small;
-                @include button-primary;
-              }
-
-              .button-small {
-                @include button;
-                @include button-small;
+  .article-section
+    .article-section-heading
+      | @mixin button-expandable
+    .article-example
+      .buttons
+        a.button-expandable
+          | ...
+      .markdown
+        pre
+          code
+            |
+              .button-expandable {
+                @include button-expandable;
               }
