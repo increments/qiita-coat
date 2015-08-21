@@ -1,3 +1,148 @@
 @mixin button {
-  // todo
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-radius: 3px;
+  border: 1px solid #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 12px;
+  position: relative;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-appearance: none;
+
+  &:active,
+  &:hover {
+    background-color: #ddd;
+    background-image: linear-gradient(#eee, #ddd);
+    border-color: #ccc;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.selected {
+    background-color: #dcdcdc;
+    background-image: none;
+    border-color: #b5b5b5;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &:disabled,
+  &.disabled {
+    &,
+    &:hover {
+      background-color: rgba(229, 229, 229, 0.5);
+      background-image: none;
+      border-color: rgba(197, 197, 197, 0.5);
+      box-shadow: none;
+      color: rgba(102, 102, 102, 0.5);
+      cursor: default;
+    }
+  }
+
+  &:focus {
+    border-color: #51a7e8;
+    box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+    outline: none;
+    text-decoration: none;
+  }
+
+  &:focus:hover,
+  &.selected:focus {
+    border-color: #51a7e8;
+  }
+
+  &.selected:hover {
+    background-color: darken(#dcdcdc, 5%);
+  }
+}
+
+@mixin button-danger {
+  color: #900;
+
+  &:hover {
+    color: #fff;
+    background-color: #b33630;
+    background-image: linear-gradient(#dc5f59, #b33630);
+    border-color: #cd504a;
+  }
+
+  &:active,
+  &.selected {
+    color: #fff;
+    background-color: #b33630;
+    background-image: none;
+    border-color: darken(#cd504a, 15%);
+  }
+
+  &.selected:hover {
+    background-color: darken(#b33630, 5%);
+  }
+
+  &:disabled,
+  &.disabled {
+    &,
+    &:hover {
+      color: #cb7f7f;
+      background-color: #efefef;
+      background-image: linear-gradient(#fefefe, #efefef);
+      border-color: #e1e1e1;
+    }
+  }
+
+  &:hover,
+  &:active,
+  &.selected {
+    .counter {
+      color: #b33630;
+      background-color: #fff;
+    }
+  }
+}
+
+@mixin button-primary {
+  background-color: #60b044;
+  background-image: linear-gradient(#8add6d, #60b044);
+  border-color: darken(#60b044, 2%);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    background-color: darken(#60b044, 5%);
+    background-image: linear-gradient(darken(#8add6d, 5%), darken(#60b044, 5%));
+    border-color: #4a993e;
+    color: #fff;
+  }
+
+  &:active,
+  &.selected {
+    background-color: darken(#60b044, 5%);
+    background-image: none;
+    border-color: darken(#4a993e, 5%);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  &.selected:hover {
+    background-color: darken(#60b044, 10%);
+  }
+
+  &:disabled,
+  &.disabled {
+    &,
+    &:hover {
+      background-color: #add39f;
+      background-image: linear-gradient(#c3ecb4, #add39f);
+      border-color: #b9dcac #b9dcac #a7c89b;
+      color: #fefefe;
+    }
+  }
+}
+
+@mixin button-small {
+  padding: 2px 10px;
 }

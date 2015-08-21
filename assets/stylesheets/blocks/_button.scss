@@ -1,5 +1,42 @@
 @import "scss/button";
 
+.button,
+.button-danger,
+.button-danger-small,
+.button-primary,
+.button-primary-small
+.button-small {
+  margin-bottom: 12px;
+  margin-right: 12px;
+}
+
 .button {
   @include button;
+}
+
+.button-danger {
+  @include button;
+  @include button-danger;
+}
+
+.button-danger-small {
+  @include button;
+  @include button-danger;
+  @include button-small;
+}
+
+.button-primary {
+  @include button;
+  @include button-primary;
+}
+
+.button-primary-small {
+  @include button;
+  @include button-small;
+  @include button-primary;
+}
+
+.button-small {
+  @include button;
+  @include button-small;
 }

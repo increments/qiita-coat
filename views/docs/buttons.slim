@@ -7,12 +7,52 @@ article.article
     .article-section-heading
       | @mixin button
     .article-example
-      a.button[href=""]
-        | .button
+      .button-group
+        a.button[href=""]
+          | .button
+        a.button-small[href=""]
+          | .button-small
+      .button-group
+        a.button-primary[href=""]
+          | .button-primary
+        a.button-primary-small[href=""]
+          | .button-primary-small
+      .button-group
+        a.button-danger[href=""]
+          | .button-danger
+        a.button-danger-small[href=""]
+          | .button-danger-small
       .markdown
         pre
           code
             |
               .button {
                 @include button;
+              }
+              
+              .button-danger {
+                @include button;
+                @include button-danger;
+              }
+              
+              .button-danger {
+                @include button;
+                @include button-danger;
+                @include button-small;
+              }
+              
+              .button-primary {
+                @include button;
+                @include button-primary;
+              }
+              
+              .button-primary-small {
+                @include button;
+                @include button-primary;
+                @include button-small;
+              }
+              
+              .button-small {
+                @include button;
+                @include button-small;
               }
