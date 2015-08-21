@@ -2716,6 +2716,26 @@ body {
     color: #b33630;
     background-color: #fff; }
 
+.button-expandable {
+  background: #ddd;
+  border-radius: 1px;
+  color: #555;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  height: 12px;
+  line-height: 6px;
+  padding: 0 5px;
+  text-decoration: none;
+  vertical-align: middle; }
+  .button-expandable:active {
+    background-color: #4183c4;
+    color: #fff; }
+  .button-expandable:hover {
+    background-color: #ccc;
+    text-decoration: none; }
+
 .button-group {
   display: inline-block;
   vertical-align: middle; }
