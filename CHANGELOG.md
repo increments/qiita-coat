@@ -1,3 +1,6 @@
+## v0.1.0
+- Rename some scss files with plural names
+
 ## v0.0.5
 - Add buttons component
 
