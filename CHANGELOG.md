@@ -1,3 +1,7 @@
+## v0.1.1
+- Declare all variables as defaults
+- Rename file name: button -> files
+
 ## v0.1.0
 - Rename some scss files with plural names
 
