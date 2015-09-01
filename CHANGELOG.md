@@ -1,3 +1,6 @@
+## v0.1.2
+- Add alerts component
+
 ## v0.1.1
 - Declare all variables as defaults
 - Rename file name: button -> files
