@@ -2221,6 +2221,47 @@ input[type=button] {
 .clearfix {
   zoom: 1; }
 
+.alert,
+.alert-error,
+.alert-warning {
+  margin-bottom: 12px; }
+
+.alert {
+  background-color: #e2eef9;
+  border-radius: 3px;
+  border: solid 1px #bac6d3;
+  color: #246;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 12px;
+  position: relative; }
+
+.alert-error {
+  background-color: #e2eef9;
+  border-radius: 3px;
+  border: solid 1px #bac6d3;
+  color: #246;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 12px;
+  position: relative;
+  background-color: #fcdede;
+  border-color: #d2b2b2;
+  color: #911; }
+
+.alert-warning {
+  background-color: #e2eef9;
+  border-radius: 3px;
+  border: solid 1px #bac6d3;
+  color: #246;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 12px;
+  position: relative;
+  background-color: #fff9ea;
+  border-color: #dfd8c2;
+  color: #4c4a42; }
+
 .article-heading {
   font-size: 32px;
   font-weight: bold; }
