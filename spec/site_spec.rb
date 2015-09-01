@@ -8,6 +8,7 @@ RSpec.describe "Site spec", :sitespec do
 
   %w[
     /
+    /alerts
     /avatars
     /buttons
     /colors

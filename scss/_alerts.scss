@@ -1,0 +1,22 @@
+@mixin alert {
+  background-color: #e2eef9;
+  border-radius: 3px;
+  border: solid 1px #bac6d3;
+  color: #246;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 12px;
+  position: relative;
+}
+
+@mixin alert-error {
+  background-color: #fcdede;
+  border-color: #d2b2b2;
+  color: #911;
+}
+
+@mixin alert-warning {
+  background-color: #fff9ea;
+  border-color: #dfd8c2;
+  color: #4c4a42;
+}

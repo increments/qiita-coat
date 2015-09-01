@@ -1,0 +1,44 @@
+article.article
+  h1.article-heading
+    | Alerts
+  .article-section
+    .article-section-heading
+      | @mixin alert
+    .article-example
+      .alert
+        | .alert
+      .markdown
+        pre
+          code
+            |
+              .alert {
+                @include alert;
+              }
+  .article-section
+    .article-section-heading
+      | @mixin alert-error
+    .article-example
+      .alert-error
+        | .alert-error
+      .markdown
+        pre
+          code
+            |
+              .alert-error {
+                @include alert;
+                @include alert-error;
+              }
+  .article-section
+    .article-section-heading
+      | @mixin alert-warning
+    .article-example
+      .alert-warning
+        | .alert-warning
+      .markdown
+        pre
+          code
+            |
+              .alert-warning {
+                @include alert;
+                @include alert-warning;
+              }

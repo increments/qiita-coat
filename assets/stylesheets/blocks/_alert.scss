@@ -1,0 +1,21 @@
+@import "scss/alerts";
+
+.alert,
+.alert-error,
+.alert-warning {
+  margin-bottom: 12px;
+}
+
+.alert {
+  @include alert;
+}
+
+.alert-error {
+  @include alert;
+  @include alert-error;
+}
+
+.alert-warning {
+  @include alert;
+  @include alert-warning;
+}
