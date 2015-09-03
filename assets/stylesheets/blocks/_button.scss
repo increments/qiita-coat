@@ -1,6 +1,7 @@
 @import "scss/buttons";
 @import "scss/utilities";
 
+.button,
 .button-block-small,
 .button-block,
 .button-danger-disabled,
@@ -83,6 +84,10 @@
   @include button;
   @include button-grouped;
   @include button-small;
+}
+
+.button-base {
+  @include button-base;
 }
 
 .button-outline {

@@ -64,6 +64,22 @@ article.article
               }
   .article-section
     .article-section-heading
+      | @mixin button-base
+    .article-example
+      .buttons
+        button.button
+          | .button
+        a.button-base[href="#"]
+          | .button-base
+      .markdown
+        pre
+          code
+            |
+              .button-base {
+                @include button-base;
+              }
+  .article-section
+    .article-section-heading
       | @mixin button-small
     .article-example
       .buttons
