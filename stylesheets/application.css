@@ -2328,6 +2328,7 @@ body {
   color: #4a4a4a;
   font-family: "Helvetica Neue", Helvetica, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif; }
 
+.button,
 .button-block-small,
 .button-block,
 .button-danger-disabled,
@@ -2346,18 +2347,19 @@ body {
   margin-right: 12px; }
 
 .button {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -2396,18 +2398,19 @@ body {
     background-color: #cfcfcf; }
 
 .button-block {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -2449,18 +2452,19 @@ body {
     background-color: #cfcfcf; }
 
 .button-block-small {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -2523,18 +2527,19 @@ body {
     cursor: pointer; }
 
 .button-countable {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -2578,18 +2583,19 @@ body {
     background-color: #cfcfcf; }
 
 .button-disabled {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -2636,18 +2642,19 @@ body {
     cursor: default; }
 
 .button-danger {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -2713,18 +2720,19 @@ body {
     background-color: #fff; }
 
 .button-danger-disabled {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -2769,18 +2777,19 @@ body {
     border-color: #e1e1e1; }
 
 .button-danger-small {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -2878,18 +2887,19 @@ body {
     display: table; }
 
 .button-grouped {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -2948,18 +2958,19 @@ body {
     margin-left: -1px; }
 
 .button-grouped-small {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -3018,19 +3029,29 @@ body {
   .button-grouped-small + .button-grouped-small {
     margin-left: -1px; }
 
-.button-outline {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+.button-base {
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 12px;
+  position: relative; }
+
+.button-outline {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -3097,18 +3118,19 @@ body {
     border-color: #e5e5e5; }
 
 .button-outline-disabled {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -3153,18 +3175,19 @@ body {
     border-color: #e5e5e5; }
 
 .button-outline-small {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -3232,18 +3255,19 @@ body {
     border-color: #e5e5e5; }
 
 .button-primary {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -3308,18 +3332,19 @@ body {
     color: #fefefe; }
 
 .button-primary-disabled {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -3364,18 +3389,19 @@ body {
     color: #fefefe; }
 
 .button-primary-small {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -3441,18 +3467,19 @@ body {
     color: #fefefe; }
 
 .button-small {
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
+  border: 1px solid transparent;
   border-radius: 3px;
-  border: 1px solid #d5d5d5;
-  color: #333;
-  cursor: pointer;
   display: inline-block;
   font-size: 13px;
-  font-weight: bold;
   line-height: 20px;
   padding: 6px 12px;
   position: relative;
+  background-color: #eee;
+  background-image: linear-gradient(#fcfcfc, #eee);
+  border-color: #d5d5d5;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
